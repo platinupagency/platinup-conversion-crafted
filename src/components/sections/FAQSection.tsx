@@ -9,39 +9,89 @@ import {
 const faqs = [
   {
     q: "V čem jste jiní než ostatní agentury?",
-    a: "Většina agentur dělá všechno. PPC, social, weby, emailing… od každého trochu. My děláme jednu věc — e-mail marketing.\n\nDíky tomu jdeme výrazně víc do hloubky. Neřešíme „správu kampaní", ale budujeme systém, který generuje tržby dlouhodobě.\n\nNejsme dodavatel. Jsme výkonnostní partner.",
+    a: `Většina agentur dělá všechno. PPC, social, weby, emailing\u2026 od každého trochu. My děláme jednu věc \u2014 e-mail marketing.
+
+Díky tomu jdeme výrazně víc do hloubky. Neřešíme \u201Esprávu kampaní\u201C, ale budujeme systém, který generuje tržby dlouhodobě.
+
+Nejsme dodavatel. Jsme výkonnostní partner.`,
   },
   {
     q: "My už e-mail marketing děláme. Má to pro nás smysl?",
-    a: "Ve většině případů ano.\n\nTypicky vidíme:\n– pár základních automatizací\n– hromadné kampaně bez segmentace\n– minimální práci s daty\n\nTohle sice generuje nějaké objednávky, ale zdaleka ne maximum.\n\nRozdíl mezi „děláme emailing" a „emailing vydělává" je obrovský. A právě ten řešíme.",
+    a: `Ve většině případů ano.
+
+Typicky vidíme:
+\u2013 pár základních automatizací
+\u2013 hromadné kampaně bez segmentace
+\u2013 minimální práci s daty
+
+Tohle sice generuje nějaké objednávky, ale zdaleka ne maximum.
+
+Rozdíl mezi \u201Eděláme emailing\u201C a \u201Eemailing vydělává\u201C je obrovský. A právě ten řešíme.`,
   },
   {
     q: "Jaké výsledky můžeme očekávat?",
-    a: "Záleží na aktuálním stavu vašeho e-shopu.\n\nPokud už máte databázi a návštěvnost, téměř vždy tam leží nevyužitý potenciál — často v řádech desítek procent obratu.\n\nNeprodáváme sliby. Budujeme systém, který dlouhodobě zvyšuje tržby z e-mailingu.\n\nA proto jsme placeni za výsledky.",
+    a: `Záleží na aktuálním stavu vašeho e-shopu.
+
+Pokud už máte databázi a návštěvnost, téměř vždy tam leží nevyužitý potenciál \u2014 často v řádech desítek procent obratu.
+
+Neprodáváme sliby. Budujeme systém, který dlouhodobě zvyšuje tržby z e-mailingu.
+
+A proto jsme placeni za výsledky.`,
   },
   {
     q: "Jak funguje vaše cenotvorba?",
-    a: "Neúčtujeme hodinovku ani „správu".\n\nJsme placeni za výkon.\n\nPokud e-mail marketing nevydělává, neplatíte nám ani korunu. Naše motivace je stejná jako vaše — růst.",
+    a: `Neúčtujeme hodinovku ani \u201Esprávu\u201C.
+
+Jsme placeni za výkon.
+
+Pokud e-mail marketing nevydělává, neplatíte nám ani korunu. Naše motivace je stejná jako vaše \u2014 růst.`,
   },
   {
     q: "Není výhodnější najmout si vlastní in-house tým?",
-    a: "Ve většině případů ne.\n\nInterní tým znamená:\n– nábor\n– školení\n– fixní náklady\n– nejistý výsledek\n\nNavíc jeden člověk málokdy pokryje strategii, copywriting, data i technickou část.\n\nU nás máte sehraný tým specialistů, kteří už ví, co funguje. Bez nákladů a bez zdlouhavého testování.",
+    a: `Ve většině případů ne.
+
+Interní tým znamená:
+\u2013 nábor
+\u2013 školení
+\u2013 fixní náklady
+\u2013 nejistý výsledek
+
+Navíc jeden člověk málokdy pokryje strategii, copywriting, data i technickou část.
+
+U nás máte sehraný tým specialistů, kteří už ví, co funguje. Bez nákladů a bez zdlouhavého testování.`,
   },
   {
     q: "Kolik času nám to zabere?",
-    a: "Minimum.\n\nNa začátku si vyjasníme směr a získáme podklady. Potom už většinu práce řešíme my.\n\nVy máte přehled o výsledcích, ale nemusíte řešit operativu.",
+    a: `Minimum.
+
+Na začátku si vyjasníme směr a získáme podklady. Potom už většinu práce řešíme my.
+
+Vy máte přehled o výsledcích, ale nemusíte řešit operativu.`,
   },
   {
     q: "S jakými e-shopy spolupracujete?",
-    a: "Se značkami, které mají:\n– kvalitní produkt\n– reálný byznys\n– existující zákazníky a návštěvnost\n\nNepracujeme s dropshippingem ani projekty bez základu.\n\nHledáme e-shopy, které chtějí růst dlouhodobě.",
+    a: `Se značkami, které mají:
+\u2013 kvalitní produkt
+\u2013 reálný byznys
+\u2013 existující zákazníky a návštěvnost
+
+Nepracujeme s dropshippingem ani projekty bez základu.
+
+Hledáme e-shopy, které chtějí růst dlouhodobě.`,
   },
   {
     q: "Jak rychle uvidíme výsledky?",
-    a: "První výsledky se obvykle začnou objevovat v řádu týdnů.\n\nPlný potenciál se ale projeví postupně, jak se systém rozšiřuje a optimalizuje.\n\nE-mail marketing není jednorázová kampaň. Je to dlouhodobý kanál, který roste v čase.",
+    a: `První výsledky se obvykle začnou objevovat v řádu týdnů.
+
+Plný potenciál se ale projeví postupně, jak se systém rozšiřuje a optimalizuje.
+
+E-mail marketing není jednorázová kampaň. Je to dlouhodobý kanál, který roste v čase.`,
   },
   {
     q: "Jaké nástroje používáte?",
-    a: "Pracujeme s nástroji jako Ecomail, Klaviyo a dalšími.\n\nVýběr vždy přizpůsobujeme konkrétnímu e-shopu tak, aby dával smysl výkonově i ekonomicky.",
+    a: `Pracujeme s nástroji jako Ecomail, Klaviyo a dalšími.
+
+Výběr vždy přizpůsobujeme konkrétnímu e-shopu tak, aby dával smysl výkonově i ekonomicky.`,
   },
   {
     q: "Co když to nebude fungovat?",
