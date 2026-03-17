@@ -1,4 +1,5 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import { Button } from "@/components/ui/button";
 
 const items = [
   "přivádí zákazníky zpět",
@@ -7,8 +8,8 @@ const items = [
 ];
 
 const HowItWorksSection = () => (
-  <section className="py-24 md:py-32 px-6">
-    <div className="max-w-3xl mx-auto">
+  <section className="py-20 md:py-28 px-6">
+    <div className="max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Jak spolupráce vypadá?
@@ -35,12 +36,15 @@ const HowItWorksSection = () => (
       </AnimatedSection>
       <AnimatedSection delay={0.3}>
         <div className="mt-10 flex gap-8">
-          <div>
-            <p className="text-lg font-semibold text-foreground font-body">Vy se soustředíte na byznys.</p>
-          </div>
-          <div>
-            <p className="text-lg font-semibold text-gold font-body">My na výkon.</p>
-          </div>
+          <p className="text-lg font-semibold text-foreground font-body">Vy se soustředíte na byznys.</p>
+          <p className="text-lg font-semibold text-gold font-body">My na výkon.</p>
+        </div>
+      </AnimatedSection>
+      <AnimatedSection delay={0.4}>
+        <div className="mt-10">
+          <Button variant="cta" size="lg" className="text-base px-8 py-5">
+            Domluvit hovor zdarma
+          </Button>
         </div>
       </AnimatedSection>
     </div>

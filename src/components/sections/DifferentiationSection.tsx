@@ -1,8 +1,8 @@
 import AnimatedSection from "@/components/AnimatedSection";
 
 const DifferentiationSection = () => (
-  <section className="py-24 md:py-32 px-6 bg-background-alt">
-    <div className="max-w-3xl mx-auto">
+  <section className="py-20 md:py-28 px-6 bg-background-alt">
+    <div className="max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Nejsme „správci".
