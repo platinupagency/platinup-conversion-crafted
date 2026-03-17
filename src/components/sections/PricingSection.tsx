@@ -2,8 +2,8 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 
 const PricingSection = () => (
-  <section className="py-24 md:py-32 px-6 bg-background-alt">
-    <div className="max-w-3xl mx-auto">
+  <section className="py-20 md:py-28 px-6 bg-background-alt">
+    <div className="max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           A teď to nejdůležitější.
@@ -24,6 +24,13 @@ const PricingSection = () => (
             Pokud e-mail marketing nevydělává,{" "}
             <span className="text-cta">neplatíte nám ani korunu.</span>
           </p>
+        </div>
+      </AnimatedSection>
+      <AnimatedSection delay={0.3}>
+        <div className="mt-10">
+          <Button variant="cta" size="lg" className="text-base px-8 py-5">
+            Začít vydělávat z e-mailů
+          </Button>
         </div>
       </AnimatedSection>
     </div>

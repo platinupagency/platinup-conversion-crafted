@@ -1,4 +1,5 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import { Button } from "@/components/ui/button";
 
 const items = [
   "Navrhujeme strategii na míru vašemu e-shopu",
@@ -9,8 +10,8 @@ const items = [
 ];
 
 const SolutionSection = () => (
-  <section className="py-24 md:py-32 px-6">
-    <div className="max-w-3xl mx-auto">
+  <section className="py-20 md:py-28 px-6">
+    <div className="max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Nejsme klasická agentura.
@@ -39,6 +40,13 @@ const SolutionSection = () => (
         <p className="mt-2 font-semibold text-foreground font-body">
           Díky tomu jdeme do hloubky, kde většina agentur končí.
         </p>
+      </AnimatedSection>
+      <AnimatedSection delay={0.35}>
+        <div className="mt-10">
+          <Button variant="cta" size="lg" className="text-base px-8 py-5">
+            Domluvit hovor zdarma
+          </Button>
+        </div>
       </AnimatedSection>
     </div>
   </section>

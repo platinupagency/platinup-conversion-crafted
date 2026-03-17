@@ -2,15 +2,15 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 
 const FinalCTASection = () => (
-  <section className="py-24 md:py-32 px-6">
-    <div className="max-w-3xl mx-auto text-center">
+  <section className="py-20 md:py-28 px-6">
+    <div className="max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Realita je jednoduchá.
         </h2>
       </AnimatedSection>
       <AnimatedSection delay={0.1}>
-        <div className="mt-8 space-y-4 text-lg text-muted-foreground font-body text-left max-w-2xl mx-auto">
+        <div className="mt-8 space-y-4 text-lg text-muted-foreground font-body max-w-2xl">
           <p>
             Můžete pokračovat tak, jak doteď. Posílat občas kampaně a přicházet o objednávky, které už mohly být vaše.
           </p>
@@ -23,7 +23,7 @@ const FinalCTASection = () => (
         </div>
       </AnimatedSection>
       <AnimatedSection delay={0.2}>
-        <div className="gold-divider my-12 max-w-xs mx-auto" />
+        <div className="gold-divider my-12 max-w-xs" />
         <h3 className="text-2xl md:text-3xl font-bold font-display text-foreground">
           Chcete zjistit, kolik peněz vám teď utíká?
         </h3>
