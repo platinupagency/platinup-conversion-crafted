@@ -28,6 +28,7 @@ const Index = () => (
       <SolutionSection />
       <DifferentiationSection />
       <TeamSection />
+      <EmailShowcaseSection />
       <IdealClientSection />
       <HowItWorksSection />
       <PricingSection />
