@@ -5,6 +5,7 @@ import WaveBackground from "@/components/WaveBackground";
 const FinalCTASection = () => (
   <section className="relative py-20 md:py-28 px-6 overflow-hidden">
     <WaveBackground variant="section" />
+    <div className="relative z-10 max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Realita je jednoduchá.
