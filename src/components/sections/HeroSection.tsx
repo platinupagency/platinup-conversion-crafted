@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/AnimatedSection";
+import WaveBackground from "@/components/WaveBackground";
 
 const HeroSection = () => (
-  <section className="min-h-[100dvh] flex items-center px-6 pt-16">
-    <div className="max-w-4xl mx-auto w-full py-16 md:py-24">
+  <section className="relative min-h-[100dvh] flex items-center px-6 pt-16 overflow-hidden">
+    <WaveBackground variant="hero" />
+    <div className="relative z-10 max-w-4xl mx-auto w-full py-16 md:py-24">
       <AnimatedSection>
         <p className="text-sm font-semibold tracking-widest uppercase text-gold mb-6 font-display">
           E-mail marketing, který vydělává

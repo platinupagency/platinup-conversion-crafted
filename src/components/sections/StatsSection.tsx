@@ -1,5 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
+import WaveBackground from "@/components/WaveBackground";
 
 const stats = [
   { value: "5–25×", label: "dražší je získání nového zákazníka než udržení stávajícího" },
@@ -8,8 +9,9 @@ const stats = [
 ];
 
 const StatsSection = () => (
-  <section className="py-20 md:py-28 px-6">
-    <div className="max-w-4xl mx-auto">
+  <section className="relative py-20 md:py-28 px-6 overflow-hidden">
+    <WaveBackground variant="section" />
+    <div className="relative z-10 max-w-4xl mx-auto">
       <AnimatedSection>
         <p className="text-lg text-muted-foreground font-body max-w-2xl">
           Jinými slovy — <span className="font-semibold text-foreground">peníze už máte ve své databázi.</span>{" "}
