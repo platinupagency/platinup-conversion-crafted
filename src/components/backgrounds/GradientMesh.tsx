@@ -3,50 +3,56 @@ import { motion } from "framer-motion";
 const GradientMesh = () => (
   <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ zIndex: 0 }}>
     <motion.div
-      className="absolute w-[500px] h-[500px] rounded-full"
+      className="absolute rounded-full"
       style={{
-        background: "radial-gradient(circle, hsl(42 45% 55%) 0%, transparent 70%)",
-        top: "10%",
-        left: "5%",
-        filter: "blur(80px)",
-        opacity: 0.15,
+        width: 600,
+        height: 600,
+        background: "radial-gradient(circle, hsl(42 55% 50%) 0%, transparent 65%)",
+        top: "0%",
+        left: "-5%",
+        filter: "blur(60px)",
+        opacity: 0.25,
       }}
       animate={{
-        x: [0, 60, -30, 0],
-        y: [0, -40, 30, 0],
-        scale: [1, 1.15, 0.95, 1],
+        x: [0, 80, -40, 0],
+        y: [0, -50, 40, 0],
+        scale: [1, 1.2, 0.9, 1],
       }}
       transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
     />
     <motion.div
-      className="absolute w-[600px] h-[600px] rounded-full"
+      className="absolute rounded-full"
       style={{
-        background: "radial-gradient(circle, hsl(217 91% 53%) 0%, transparent 70%)",
-        top: "30%",
-        right: "-5%",
-        filter: "blur(100px)",
-        opacity: 0.1,
+        width: 700,
+        height: 700,
+        background: "radial-gradient(circle, hsl(217 91% 53%) 0%, transparent 65%)",
+        top: "20%",
+        right: "-10%",
+        filter: "blur(70px)",
+        opacity: 0.18,
       }}
       animate={{
-        x: [0, -50, 40, 0],
-        y: [0, 50, -30, 0],
-        scale: [1, 0.9, 1.1, 1],
+        x: [0, -60, 50, 0],
+        y: [0, 60, -40, 0],
+        scale: [1, 0.85, 1.15, 1],
       }}
       transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
     />
     <motion.div
-      className="absolute w-[400px] h-[400px] rounded-full"
+      className="absolute rounded-full"
       style={{
-        background: "radial-gradient(circle, hsl(42 50% 70%) 0%, transparent 70%)",
-        bottom: "5%",
-        left: "30%",
-        filter: "blur(90px)",
-        opacity: 0.12,
+        width: 500,
+        height: 500,
+        background: "radial-gradient(circle, hsl(42 60% 60%) 0%, transparent 65%)",
+        bottom: "-5%",
+        left: "25%",
+        filter: "blur(60px)",
+        opacity: 0.2,
       }}
       animate={{
-        x: [0, 40, -50, 0],
-        y: [0, -30, 20, 0],
-        scale: [1, 1.2, 0.85, 1],
+        x: [0, 50, -60, 0],
+        y: [0, -40, 30, 0],
+        scale: [1, 1.25, 0.8, 1],
       }}
       transition={{ duration: 22, repeat: Infinity, ease: "easeInOut" }}
     />
