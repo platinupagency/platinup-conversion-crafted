@@ -1,5 +1,5 @@
 import AnimatedSection from "@/components/AnimatedSection";
-import CTAButton from "@/components/CTAButton";
+import { Button } from "@/components/ui/button";
 
 const FinalCTASection = () => (
   <section className="py-20 md:py-28 px-6">
@@ -30,9 +30,9 @@ const FinalCTASection = () => (
         <p className="mt-4 text-lg text-muted-foreground font-body">
           Domluvme si krátký hovor a podíváme se na váš e-shop konkrétně.
         </p>
-        <CTAButton className="mt-8 text-base px-10 py-6">
+        <Button variant="cta" size="lg" className="mt-8 text-base px-10 py-6">
           Domluvit hovor zdarma
-        </CTAButton>
+        </Button>
       </AnimatedSection>
     </div>
   </section>

@@ -1,5 +1,5 @@
 import AnimatedSection from "@/components/AnimatedSection";
-import CTAButton from "@/components/CTAButton";
+import { Button } from "@/components/ui/button";
 
 const TeamSection = () => (
   <section className="py-20 md:py-28 px-6">
@@ -28,9 +28,9 @@ const TeamSection = () => (
       </AnimatedSection>
       <AnimatedSection delay={0.3}>
         <div className="mt-10">
-          <CTAButton className="text-base px-8 py-5">
+          <Button variant="cta" size="lg" className="text-base px-8 py-5">
             Zjistit, jestli se hodíme
-          </CTAButton>
+          </Button>
         </div>
       </AnimatedSection>
     </div>
