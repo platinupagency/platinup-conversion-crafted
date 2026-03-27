@@ -1,9 +1,10 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
+import WaveBackground from "@/components/WaveBackground";
 
 const FinalCTASection = () => (
-  <section className="py-20 md:py-28 px-6">
-    <div className="max-w-4xl mx-auto">
+  <section className="relative py-20 md:py-28 px-6 overflow-hidden">
+    <WaveBackground variant="section" />
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Realita je jednoduchá.
