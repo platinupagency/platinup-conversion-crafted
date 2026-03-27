@@ -3,13 +3,12 @@ import { motion } from "framer-motion";
 interface BlobConfig {
   size: number;
   color: string;
-  top?: string;
-  bottom?: string;
-  left?: string;
-  right?: string;
+  startX: string;
+  startY: string;
   blur: number;
   opacity: number;
-  animate: { x: number[]; y: number[]; scale: number[] };
+  path: { x: number[]; y: number[] };
+  scale: number[];
   duration: number;
 }
 
@@ -19,24 +18,24 @@ interface GradientMeshProps {
 
 const variants: Record<string, BlobConfig[]> = {
   hero: [
-    { size: 600, color: "hsl(42 55% 50%)", top: "0%", left: "-5%", blur: 60, opacity: 0.25, animate: { x: [0, 80, -40, 0], y: [0, -50, 40, 0], scale: [1, 1.2, 0.9, 1] }, duration: 20 },
-    { size: 700, color: "hsl(217 91% 53%)", top: "20%", right: "-10%", blur: 70, opacity: 0.18, animate: { x: [0, -60, 50, 0], y: [0, 60, -40, 0], scale: [1, 0.85, 1.15, 1] }, duration: 25 },
-    { size: 500, color: "hsl(42 60% 60%)", bottom: "-5%", left: "25%", blur: 60, opacity: 0.2, animate: { x: [0, 50, -60, 0], y: [0, -40, 30, 0], scale: [1, 1.25, 0.8, 1] }, duration: 22 },
+    { size: 600, color: "hsl(42 55% 50%)", startX: "-5%", startY: "0%", blur: 60, opacity: 0.25, path: { x: [0, 300, 500, 200, -100, 0], y: [0, 150, -50, 300, 100, 0] }, scale: [1, 1.15, 0.9, 1.1, 0.95, 1], duration: 35 },
+    { size: 700, color: "hsl(217 91% 53%)", startX: "70%", startY: "10%", blur: 70, opacity: 0.18, path: { x: [0, -400, -200, 100, -300, 0], y: [0, 200, 400, 100, -100, 0] }, scale: [1, 0.85, 1.1, 0.9, 1.15, 1], duration: 40 },
+    { size: 500, color: "hsl(42 60% 60%)", startX: "30%", startY: "60%", blur: 60, opacity: 0.2, path: { x: [0, -200, 300, -100, 200, 0], y: [0, -300, -100, -200, 50, 0] }, scale: [1, 1.2, 0.85, 1.1, 0.9, 1], duration: 38 },
   ],
   stats: [
-    { size: 550, color: "hsl(217 91% 53%)", top: "-10%", right: "10%", blur: 65, opacity: 0.2, animate: { x: [0, -70, 30, 0], y: [0, 40, -50, 0], scale: [1, 1.1, 0.85, 1] }, duration: 24 },
-    { size: 450, color: "hsl(42 55% 50%)", bottom: "0%", left: "-8%", blur: 55, opacity: 0.22, animate: { x: [0, 60, -30, 0], y: [0, -30, 50, 0], scale: [1, 0.9, 1.2, 1] }, duration: 19 },
-    { size: 350, color: "hsl(42 60% 60%)", top: "40%", right: "-5%", blur: 50, opacity: 0.15, animate: { x: [0, -40, 55, 0], y: [0, 35, -25, 0], scale: [1, 1.15, 0.9, 1] }, duration: 21 },
+    { size: 550, color: "hsl(217 91% 53%)", startX: "80%", startY: "-10%", blur: 65, opacity: 0.2, path: { x: [0, -500, -300, 100, -200, 0], y: [0, 200, 350, 150, -50, 0] }, scale: [1, 1.1, 0.85, 1.05, 0.9, 1], duration: 32 },
+    { size: 450, color: "hsl(42 55% 50%)", startX: "-10%", startY: "50%", blur: 55, opacity: 0.22, path: { x: [0, 400, 250, 500, 150, 0], y: [0, -200, 100, -100, -250, 0] }, scale: [1, 0.9, 1.2, 0.88, 1.1, 1], duration: 36 },
+    { size: 350, color: "hsl(42 60% 60%)", startX: "40%", startY: "20%", blur: 50, opacity: 0.15, path: { x: [0, 200, -150, 300, -200, 0], y: [0, 250, 100, -150, 200, 0] }, scale: [1, 1.15, 0.9, 1.05, 0.92, 1], duration: 30 },
   ],
   pricing: [
-    { size: 500, color: "hsl(42 60% 60%)", top: "5%", right: "-8%", blur: 60, opacity: 0.23, animate: { x: [0, -55, 40, 0], y: [0, -45, 35, 0], scale: [1, 1.15, 0.88, 1] }, duration: 23 },
-    { size: 600, color: "hsl(217 91% 53%)", bottom: "-10%", left: "5%", blur: 70, opacity: 0.16, animate: { x: [0, 45, -60, 0], y: [0, 55, -30, 0], scale: [1, 0.88, 1.18, 1] }, duration: 26 },
-    { size: 400, color: "hsl(42 55% 50%)", top: "50%", left: "50%", blur: 55, opacity: 0.18, animate: { x: [0, -35, 50, 0], y: [0, -50, 25, 0], scale: [1, 1.2, 0.85, 1] }, duration: 18 },
+    { size: 500, color: "hsl(42 60% 60%)", startX: "75%", startY: "5%", blur: 60, opacity: 0.23, path: { x: [0, -350, -500, -200, 100, 0], y: [0, 150, 300, 200, -50, 0] }, scale: [1, 1.15, 0.88, 1.1, 0.93, 1], duration: 34 },
+    { size: 600, color: "hsl(217 91% 53%)", startX: "5%", startY: "60%", blur: 70, opacity: 0.16, path: { x: [0, 300, 450, 200, 500, 0], y: [0, -250, -100, -300, -50, 0] }, scale: [1, 0.88, 1.18, 0.92, 1.05, 1], duration: 42 },
+    { size: 400, color: "hsl(42 55% 50%)", startX: "50%", startY: "30%", blur: 55, opacity: 0.18, path: { x: [0, -200, 250, -300, 150, 0], y: [0, -200, 150, 100, -250, 0] }, scale: [1, 1.2, 0.85, 1.08, 0.9, 1], duration: 37 },
   ],
   cta: [
-    { size: 650, color: "hsl(42 55% 50%)", top: "-15%", left: "40%", blur: 65, opacity: 0.22, animate: { x: [0, -50, 65, 0], y: [0, 45, -35, 0], scale: [1, 0.9, 1.15, 1] }, duration: 21 },
-    { size: 480, color: "hsl(217 91% 53%)", bottom: "5%", left: "-10%", blur: 60, opacity: 0.17, animate: { x: [0, 70, -35, 0], y: [0, -40, 55, 0], scale: [1, 1.2, 0.85, 1] }, duration: 27 },
-    { size: 380, color: "hsl(42 60% 60%)", top: "30%", right: "5%", blur: 50, opacity: 0.2, animate: { x: [0, 40, -55, 0], y: [0, -55, 30, 0], scale: [1, 1.1, 0.92, 1] }, duration: 20 },
+    { size: 650, color: "hsl(42 55% 50%)", startX: "40%", startY: "-15%", blur: 65, opacity: 0.22, path: { x: [0, -300, 200, -400, 100, 0], y: [0, 300, 200, 350, 100, 0] }, scale: [1, 0.9, 1.15, 0.88, 1.1, 1], duration: 33 },
+    { size: 480, color: "hsl(217 91% 53%)", startX: "-10%", startY: "40%", blur: 60, opacity: 0.17, path: { x: [0, 500, 300, 450, 200, 0], y: [0, -150, 100, -200, 50, 0] }, scale: [1, 1.2, 0.85, 1.1, 0.92, 1], duration: 39 },
+    { size: 380, color: "hsl(42 60% 60%)", startX: "60%", startY: "70%", blur: 50, opacity: 0.2, path: { x: [0, -250, 150, -100, 300, 0], y: [0, -300, -150, -250, -50, 0] }, scale: [1, 1.1, 0.92, 1.15, 0.88, 1], duration: 31 },
   ],
 };
 
@@ -53,14 +52,16 @@ const GradientMesh = ({ variant = "hero" }: GradientMeshProps) => {
             width: blob.size,
             height: blob.size,
             background: `radial-gradient(circle, ${blob.color} 0%, transparent 65%)`,
-            top: blob.top,
-            bottom: blob.bottom,
-            left: blob.left,
-            right: blob.right,
+            left: blob.startX,
+            top: blob.startY,
             filter: `blur(${blob.blur}px)`,
             opacity: blob.opacity,
           }}
-          animate={blob.animate}
+          animate={{
+            x: blob.path.x,
+            y: blob.path.y,
+            scale: blob.scale,
+          }}
           transition={{ duration: blob.duration, repeat: Infinity, ease: "easeInOut" }}
         />
       ))}
