@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 
 const rays = [
-  { angle: -25, left: "10%", width: 200, delay: 0 },
-  { angle: -15, left: "35%", width: 150, delay: 3 },
-  { angle: -30, left: "60%", width: 180, delay: 1.5 },
-  { angle: -20, left: "85%", width: 120, delay: 4 },
+  { angle: -20, left: "5%", width: 250, delay: 0 },
+  { angle: -10, left: "30%", width: 200, delay: 2 },
+  { angle: -25, left: "55%", width: 220, delay: 1 },
+  { angle: -15, left: "80%", width: 180, delay: 3 },
 ];
 
 const LightRays = () => (
@@ -16,17 +16,17 @@ const LightRays = () => (
         style={{
           left: ray.left,
           width: ray.width,
-          background: `linear-gradient(180deg, hsla(42, 45%, 55%, 0.08) 0%, transparent 60%)`,
+          background: `linear-gradient(180deg, hsla(42, 50%, 55%, 0.15) 0%, transparent 55%)`,
           transform: `rotate(${ray.angle}deg)`,
           transformOrigin: "top center",
-          filter: "blur(30px)",
+          filter: "blur(25px)",
         }}
         animate={{
-          opacity: [0, 0.8, 0.4, 1, 0],
-          x: [0, 20, -10, 15, 0],
+          opacity: [0, 1, 0.5, 1, 0],
+          x: [0, 30, -15, 20, 0],
         }}
         transition={{
-          duration: 15 + i * 3,
+          duration: 14 + i * 3,
           repeat: Infinity,
           ease: "easeInOut",
           delay: ray.delay,
@@ -34,16 +34,18 @@ const LightRays = () => (
       />
     ))}
     <motion.div
-      className="absolute w-[300px] h-[300px] rounded-full"
+      className="absolute rounded-full"
       style={{
-        background: "radial-gradient(circle, hsla(217, 91%, 53%, 0.08) 0%, transparent 70%)",
-        top: "20%",
-        right: "15%",
-        filter: "blur(60px)",
+        width: 400,
+        height: 400,
+        background: "radial-gradient(circle, hsla(217, 91%, 53%, 0.15) 0%, transparent 65%)",
+        top: "15%",
+        right: "10%",
+        filter: "blur(50px)",
       }}
       animate={{
         scale: [1, 1.3, 0.9, 1],
-        opacity: [0.6, 1, 0.5, 0.6],
+        opacity: [0.7, 1, 0.5, 0.7],
       }}
       transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
     />

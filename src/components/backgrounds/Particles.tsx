@@ -29,22 +29,22 @@ const Particles = () => {
     const init = () => {
       resize();
       particles.length = 0;
-      const count = Math.floor((width * height) / 8000);
+      const count = Math.floor((width * height) / 5000);
       for (let i = 0; i < count; i++) {
         particles.push({
           x: Math.random() * width,
           y: Math.random() * height,
-          vx: (Math.random() - 0.5) * 0.2,
-          vy: (Math.random() - 0.5) * 0.2,
-          size: Math.random() * 2.5 + 1,
-          alpha: Math.random() * 0.25 + 0.08,
+          vx: (Math.random() - 0.5) * 0.3,
+          vy: (Math.random() - 0.5) * 0.3,
+          size: Math.random() * 3 + 1.5,
+          alpha: Math.random() * 0.4 + 0.15,
           pulse: Math.random() * Math.PI * 2,
         });
       }
     };
 
     init();
-    const onResize = () => { resize(); init(); };
+    const onResize = () => init();
     window.addEventListener("resize", onResize);
 
     const draw = () => {
@@ -53,17 +53,17 @@ const Particles = () => {
       particles.forEach((p) => {
         p.x += p.vx;
         p.y += p.vy;
-        p.pulse += 0.008;
+        p.pulse += 0.01;
 
         if (p.x < 0) p.x = width;
         if (p.x > width) p.x = 0;
         if (p.y < 0) p.y = height;
         if (p.y > height) p.y = 0;
 
-        const glow = p.alpha + Math.sin(p.pulse) * 0.08;
+        const glow = p.alpha + Math.sin(p.pulse) * 0.1;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-        ctx.fillStyle = `hsla(42, 45%, 55%, ${glow})`;
+        ctx.fillStyle = `hsla(42, 50%, 55%, ${glow})`;
         ctx.fill();
       });
 
