@@ -94,12 +94,10 @@
   background: linear-gradient(
     90deg,
     hsl(var(--cta) / 0) 0%,
-    hsl(var(--cta) / 0) 25%,
-    hsl(var(--cta) / 0.15) 30%,
-    hsl(var(--cta) / 0.5) 40%,
-    hsl(var(--cta) / 0.5) 60%,
-    hsl(var(--cta) / 0.15) 70%,
-    hsl(var(--cta) / 0) 75%,
+    hsl(var(--cta) / 0.15) 3%,
+    hsl(var(--cta) / 0.5) 10%,
+    hsl(var(--cta) / 0.5) 90%,
+    hsl(var(--cta) / 0.15) 97%,
     hsl(var(--cta) / 0) 100%
   );
   -webkit-mask:
