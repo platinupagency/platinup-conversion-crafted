@@ -90,14 +90,14 @@
   position: absolute;
   inset: 0;
   border-radius: 9999px;
-  padding: 1.5px;
+  padding: 1px;
   background: linear-gradient(
     90deg,
     hsl(var(--cta) / 0) 0%,
-    hsl(var(--cta) / 0.25) 8%,
-    hsl(var(--cta) / 0.7) 25%,
-    hsl(var(--cta) / 0.7) 75%,
-    hsl(var(--cta) / 0.25) 92%,
+    hsl(var(--cta) / 0.15) 5%,
+    hsl(var(--cta) / 0.5) 15%,
+    hsl(var(--cta) / 0.5) 85%,
+    hsl(var(--cta) / 0.15) 95%,
     hsl(var(--cta) / 0) 100%
   );
   -webkit-mask:
