@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import CTAButton from "@/components/CTAButton";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const HeroSection = () => (
@@ -28,9 +28,9 @@ const HeroSection = () => (
       </AnimatedSection>
       <AnimatedSection delay={0.4}>
         <div className="mt-8 flex flex-wrap gap-4 items-center">
-          <Button variant="cta" size="lg" className="text-base px-8 py-6">
+          <CTAButton className="text-base px-8 py-6">
             Domluvit hovor zdarma
-          </Button>
+          </CTAButton>
           <p className="text-sm text-muted-foreground">
             Pokud e-mail marketing nic nevydělá,<br />
             <span className="font-semibold text-foreground">neplatíte nám ani korunu.</span>
