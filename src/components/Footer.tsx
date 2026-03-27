@@ -4,7 +4,7 @@ import logo from "@/assets/platinup-logo.png";
 const Footer = () => (
   <footer className="py-16 px-6 border-t border-border">
     <div className="max-w-4xl mx-auto flex flex-col items-center gap-8 text-center">
-      <Link to="/">
+      <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} >
         <img src={logo} alt="PlatinUp" className="h-20 md:h-28 w-auto hover:opacity-80 transition-opacity cursor-pointer" />
       </Link>
 
