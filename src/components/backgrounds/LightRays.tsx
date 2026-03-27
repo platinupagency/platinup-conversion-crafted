@@ -16,13 +16,13 @@ const LightRays = () => (
         style={{
           left: ray.left,
           width: ray.width,
-          background: `linear-gradient(180deg, hsla(42, 45%, 55%, 0.04) 0%, transparent 60%)`,
+          background: `linear-gradient(180deg, hsla(42, 45%, 55%, 0.08) 0%, transparent 60%)`,
           transform: `rotate(${ray.angle}deg)`,
           transformOrigin: "top center",
           filter: "blur(30px)",
         }}
         animate={{
-          opacity: [0, 0.6, 0.3, 0.8, 0],
+          opacity: [0, 0.8, 0.4, 1, 0],
           x: [0, 20, -10, 15, 0],
         }}
         transition={{
@@ -33,18 +33,17 @@ const LightRays = () => (
         }}
       />
     ))}
-    {/* Subtle flare */}
     <motion.div
       className="absolute w-[300px] h-[300px] rounded-full"
       style={{
-        background: "radial-gradient(circle, hsla(217, 91%, 53%, 0.04) 0%, transparent 70%)",
+        background: "radial-gradient(circle, hsla(217, 91%, 53%, 0.08) 0%, transparent 70%)",
         top: "20%",
         right: "15%",
         filter: "blur(60px)",
       }}
       animate={{
         scale: [1, 1.3, 0.9, 1],
-        opacity: [0.5, 1, 0.4, 0.5],
+        opacity: [0.6, 1, 0.5, 0.6],
       }}
       transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
     />
