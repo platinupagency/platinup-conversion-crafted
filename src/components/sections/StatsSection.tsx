@@ -10,7 +10,7 @@ const stats = [
 
 const StatsSection = () => (
   <section className="relative py-20 md:py-28 px-6 overflow-hidden">
-    <GradientMesh />
+    <GradientMesh variant="stats" />
     <div className="relative z-10 max-w-4xl mx-auto">
       <AnimatedSection>
         <p className="text-lg text-muted-foreground font-body max-w-2xl">
