@@ -1,10 +1,10 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
-import Particles from "@/components/backgrounds/Particles";
+import GradientMesh from "@/components/backgrounds/GradientMesh";
 
 const PricingSection = () => (
   <section className="relative py-20 md:py-28 px-6 bg-background-alt overflow-hidden">
-    <Particles />
+    <GradientMesh />
     <div className="relative z-10 max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
