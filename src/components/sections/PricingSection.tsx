@@ -1,10 +1,10 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
-import WaveBackground from "@/components/WaveBackground";
+import Particles from "@/components/backgrounds/Particles";
 
 const PricingSection = () => (
   <section className="relative py-20 md:py-28 px-6 bg-background-alt overflow-hidden">
-    <WaveBackground variant="section" />
+    <Particles />
     <div className="relative z-10 max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">

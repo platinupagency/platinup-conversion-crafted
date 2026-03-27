@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/AnimatedSection";
-import WaveBackground from "@/components/WaveBackground";
+import GradientMesh from "@/components/backgrounds/GradientMesh";
 
 const HeroSection = () => (
   <section className="relative min-h-[100dvh] flex items-center px-6 pt-16 overflow-hidden">
-    <WaveBackground variant="hero" />
+    <GradientMesh />
     <div className="relative z-10 max-w-4xl mx-auto w-full py-16 md:py-24">
       <AnimatedSection>
         <p className="text-sm font-semibold tracking-widest uppercase text-gold mb-6 font-display">
