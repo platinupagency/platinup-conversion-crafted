@@ -1,8 +1,20 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import email1 from "@/assets/emails/email-1.png";
+import email2 from "@/assets/emails/email-2.png";
+import email3 from "@/assets/emails/email-3.png";
+import email4 from "@/assets/emails/email-4.png";
+import email5 from "@/assets/emails/email-5.png";
+import email6 from "@/assets/emails/email-6.png";
+import email7 from "@/assets/emails/email-7.png";
 
 const emails = [
   { id: 1, src: email1, label: "Propagační kampaň" },
+  { id: 2, src: email2, label: "Produktová nabídka" },
+  { id: 3, src: email3, label: "Sezónní akce" },
+  { id: 4, src: email4, label: "Uvítací e-mail" },
+  { id: 5, src: email5, label: "Věrnostní program" },
+  { id: 6, src: email6, label: "Flash sale" },
+  { id: 7, src: email7, label: "Novinky" },
 ];
 
 const EmailShowcaseSection = () => (
