@@ -4,7 +4,9 @@ import logo from "@/assets/platinup-logo.png";
 const Footer = () => (
   <footer className="py-16 px-6 border-t border-border">
     <div className="max-w-4xl mx-auto flex flex-col items-center gap-8 text-center">
-      <img src={logo} alt="PlatinUp" className="h-20 md:h-28 w-auto" />
+      <Link to="/">
+        <img src={logo} alt="PlatinUp" className="h-20 md:h-28 w-auto hover:opacity-80 transition-opacity cursor-pointer" />
+      </Link>
 
       <div className="text-xs text-muted-foreground font-body leading-relaxed space-y-1">
         <p>
