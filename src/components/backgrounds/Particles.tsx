@@ -23,30 +23,31 @@ const Particles = () => {
       height = rect.height;
       canvas.width = width * dpr;
       canvas.height = height * dpr;
-      ctx.scale(dpr, dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
     };
 
     const init = () => {
       resize();
       particles.length = 0;
-      const count = Math.floor((width * height) / 12000);
+      const count = Math.floor((width * height) / 8000);
       for (let i = 0; i < count; i++) {
         particles.push({
           x: Math.random() * width,
           y: Math.random() * height,
-          vx: (Math.random() - 0.5) * 0.15,
-          vy: (Math.random() - 0.5) * 0.15,
-          size: Math.random() * 2 + 0.5,
-          alpha: Math.random() * 0.15 + 0.03,
+          vx: (Math.random() - 0.5) * 0.2,
+          vy: (Math.random() - 0.5) * 0.2,
+          size: Math.random() * 2.5 + 1,
+          alpha: Math.random() * 0.25 + 0.08,
           pulse: Math.random() * Math.PI * 2,
         });
       }
     };
 
     init();
-    window.addEventListener("resize", () => { resize(); init(); });
+    const onResize = () => { resize(); init(); };
+    window.addEventListener("resize", onResize);
 
-    const draw = (time: number) => {
+    const draw = () => {
       ctx.clearRect(0, 0, width, height);
 
       particles.forEach((p) => {
@@ -59,7 +60,7 @@ const Particles = () => {
         if (p.y < 0) p.y = height;
         if (p.y > height) p.y = 0;
 
-        const glow = p.alpha + Math.sin(p.pulse) * 0.04;
+        const glow = p.alpha + Math.sin(p.pulse) * 0.08;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
         ctx.fillStyle = `hsla(42, 45%, 55%, ${glow})`;
@@ -70,7 +71,10 @@ const Particles = () => {
     };
 
     animId = requestAnimationFrame(draw);
-    return () => { cancelAnimationFrame(animId); };
+    return () => {
+      cancelAnimationFrame(animId);
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
 
   return (

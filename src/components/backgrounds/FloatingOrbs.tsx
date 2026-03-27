@@ -21,12 +21,11 @@ const FloatingOrbs = () => (
           top: orb.y,
           background: `radial-gradient(circle, ${orb.color} 0%, transparent 70%)`,
           filter: "blur(40px)",
-          opacity: 0.06,
         }}
         animate={{
           y: [0, -20, 15, -10, 0],
           x: [0, 10, -15, 8, 0],
-          opacity: [0.06, 0.09, 0.05, 0.08, 0.06],
+          opacity: [0.12, 0.2, 0.1, 0.18, 0.12],
         }}
         transition={{
           duration: 12 + i * 2,

@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 const GradientMesh = () => (
   <div className="absolute inset-0 overflow-hidden pointer-events-none" style={{ zIndex: 0 }}>
     <motion.div
-      className="absolute w-[500px] h-[500px] rounded-full opacity-[0.07]"
+      className="absolute w-[500px] h-[500px] rounded-full"
       style={{
         background: "radial-gradient(circle, hsl(42 45% 55%) 0%, transparent 70%)",
         top: "10%",
         left: "5%",
         filter: "blur(80px)",
+        opacity: 0.15,
       }}
       animate={{
         x: [0, 60, -30, 0],
@@ -18,12 +19,13 @@ const GradientMesh = () => (
       transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
     />
     <motion.div
-      className="absolute w-[600px] h-[600px] rounded-full opacity-[0.05]"
+      className="absolute w-[600px] h-[600px] rounded-full"
       style={{
         background: "radial-gradient(circle, hsl(217 91% 53%) 0%, transparent 70%)",
         top: "30%",
         right: "-5%",
         filter: "blur(100px)",
+        opacity: 0.1,
       }}
       animate={{
         x: [0, -50, 40, 0],
@@ -33,12 +35,13 @@ const GradientMesh = () => (
       transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
     />
     <motion.div
-      className="absolute w-[400px] h-[400px] rounded-full opacity-[0.04]"
+      className="absolute w-[400px] h-[400px] rounded-full"
       style={{
         background: "radial-gradient(circle, hsl(42 50% 70%) 0%, transparent 70%)",
         bottom: "5%",
         left: "30%",
         filter: "blur(90px)",
+        opacity: 0.12,
       }}
       animate={{
         x: [0, 40, -50, 0],
