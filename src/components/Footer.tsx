@@ -18,6 +18,16 @@ const Footer = () => (
         <p>IČO: 22531301</p>
       </div>
 
+      <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6 text-sm text-muted-foreground font-body">
+        <a href="mailto:platinup.agency@gmail.com" className="hover:text-gold transition-colors">
+          platinup.agency@gmail.com
+        </a>
+        <span className="hidden sm:inline text-border">|</span>
+        <a href="tel:+420774174036" className="hover:text-gold transition-colors">
+          +420 774 174 036
+        </a>
+      </div>
+
       <Link
         to="/obchodni-podminky"
         className="text-sm text-muted-foreground hover:text-gold transition-colors underline underline-offset-4 font-body"
