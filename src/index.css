@@ -76,3 +76,48 @@
     background: linear-gradient(90deg, transparent, hsl(var(--gold) / 0.35), transparent);
   }
 }
+
+/* CTA button glow effect */
+.btn-cta-glow {
+  position: relative;
+  overflow: visible;
+}
+
+.btn-cta-glow::before {
+  content: '';
+  position: absolute;
+  inset: -1.5px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    hsl(var(--cta) / 0.15) 10%,
+    hsl(var(--cta) / 0.7) 30%,
+    hsl(var(--cta)) 50%,
+    hsl(var(--cta) / 0.7) 70%,
+    hsl(var(--cta) / 0.15) 90%,
+    transparent 100%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+
+.btn-cta-glow::after {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    hsl(var(--cta) / 0) 15%,
+    hsl(var(--cta) / 0.15) 35%,
+    hsl(var(--cta) / 0.25) 50%,
+    hsl(var(--cta) / 0.15) 65%,
+    hsl(var(--cta) / 0) 85%,
+    transparent 100%
+  );
+  z-index: -2;
+  pointer-events: none;
+  filter: blur(6px);
+}
