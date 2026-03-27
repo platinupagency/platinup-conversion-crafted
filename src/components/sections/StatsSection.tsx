@@ -1,5 +1,5 @@
 import AnimatedSection from "@/components/AnimatedSection";
-import { Button } from "@/components/ui/button";
+import CTAButton from "@/components/CTAButton";
 
 const stats = [
   { value: "5–25×", label: "dražší je získání nového zákazníka než udržení stávajícího" },
@@ -32,9 +32,9 @@ const StatsSection = () => (
       <AnimatedSection delay={0.5}>
         <div className="mt-14 flex items-center gap-6">
           <div className="gold-divider flex-1" />
-          <Button variant="cta" size="lg" className="text-base px-8 py-5 shrink-0">
+          <CTAButton className="text-base px-8 py-5 shrink-0">
             Chci vytěžit maximum
-          </Button>
+          </CTAButton>
           <div className="gold-divider flex-1" />
         </div>
       </AnimatedSection>
