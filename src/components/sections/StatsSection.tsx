@@ -1,6 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
-import WaveBackground from "@/components/WaveBackground";
+import FloatingOrbs from "@/components/backgrounds/FloatingOrbs";
 
 const stats = [
   { value: "5–25×", label: "dražší je získání nového zákazníka než udržení stávajícího" },
@@ -10,7 +10,7 @@ const stats = [
 
 const StatsSection = () => (
   <section className="relative py-20 md:py-28 px-6 overflow-hidden">
-    <WaveBackground variant="section" />
+    <FloatingOrbs />
     <div className="relative z-10 max-w-4xl mx-auto">
       <AnimatedSection>
         <p className="text-lg text-muted-foreground font-body max-w-2xl">
