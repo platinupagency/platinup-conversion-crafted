@@ -4,9 +4,9 @@ const ProblemSection = () => (
   <section className="py-20 md:py-28 px-6 bg-background-alt">
     <div className="max-w-4xl mx-auto">
       <AnimatedSection>
-        <p className="text-xl md:text-2xl font-display font-bold text-foreground italic">
+        <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           „My už e-mail marketing děláme."
-        </p>
+        </h2>
       </AnimatedSection>
 
       <AnimatedSection delay={0.1}>
