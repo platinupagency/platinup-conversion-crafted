@@ -17,15 +17,15 @@ const StatsSection = () => (
     <div className="relative z-10 max-w-4xl mx-auto">
       <AnimatedSection>
         <p className="text-xl md:text-2xl font-display font-bold text-foreground italic">
-          „Počkat — e-mail marketing? To je přece mrtvý kanál. Lidi e-maily nečtou."
+          „E-mail marketing už dnes nemá smysl.“
         </p>
       </AnimatedSection>
 
       <AnimatedSection delay={0.1}>
         <div className="mt-10">
-          <p className="text-lg text-muted-foreground font-body">Možná ne vy.</p>
+          <p className="text-lg text-muted-foreground font-body">To si myslí spousta lidí.</p>
           <p className="text-xl font-bold text-foreground font-display mt-1">
-            Ale vaši zákazníci ano.
+            Realita je ale jiná.
           </p>
           <p className="mt-6 text-lg text-muted-foreground font-body">
             A tady jsou data, která byste měli znát:
