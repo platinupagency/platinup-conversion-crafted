@@ -29,13 +29,13 @@ const HeroSection = () => (
         </p>
       </AnimatedSection>
       <AnimatedSection delay={0.4}>
-        <div className="mt-8 flex flex-wrap gap-4 items-center">
-          <Button variant="cta" size="lg" className="text-base px-8 py-6">
+        <div className="mt-8 flex flex-col gap-6">
+          <Button variant="cta" size="lg" className="text-base px-8 py-6 w-fit">
             Domluvit hovor zdarma
           </Button>
-          <p className="text-sm text-muted-foreground">
-            Pokud e-mail marketing nic nevydělá,<br />
-            <span className="font-semibold text-foreground">neplatíte nám ani korunu.</span>
+          <p className="text-lg text-muted-foreground font-body">
+            Pokud e-mail marketing nic nevydělá,{" "}
+            <span className="font-bold text-foreground">neplatíte nám ani korunu.</span>
           </p>
         </div>
       </AnimatedSection>
