@@ -17,7 +17,7 @@ const ClientsSection = () => (
   <section className="py-20 bg-background">
     <div className="container max-w-5xl mx-auto px-6 text-center">
       <AnimatedSection>
-        <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-10 font-display" style={{ opacity: 1 }}>
+        <p className="text-sm font-semibold uppercase tracking-widest mb-10 font-display" style={{ color: 'hsl(42, 55%, 45%)' }}>
           Spolupracovali jsme s
         </p>
       </AnimatedSection>
