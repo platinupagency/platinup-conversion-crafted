@@ -16,11 +16,9 @@ const clients = [
 const ClientsSection = () => (
   <section className="relative z-10 py-20 bg-background">
     <div className="container max-w-5xl mx-auto px-6 text-center">
-      <AnimatedSection>
-        <p className="text-sm font-bold uppercase tracking-widest text-gold mb-10 font-display">
-          Spolupracovali jsme s
-        </p>
-      </AnimatedSection>
+      <p className="relative z-20 text-sm font-bold uppercase tracking-widest text-gold mb-10 font-display opacity-100">
+        Spolupracovali jsme s
+      </p>
       <AnimatedSection delay={0.1}>
         <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16">
           {clients.map((client) => (
