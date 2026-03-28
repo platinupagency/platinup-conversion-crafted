@@ -14,6 +14,7 @@ import PricingSection from "@/components/sections/PricingSection";
 import FAQSection from "@/components/sections/FAQSection";
 import ContactSection from "@/components/sections/ContactSection";
 import FinalCTASection from "@/components/sections/FinalCTASection";
+import FounderSection from "@/components/sections/FounderSection";
 import Footer from "@/components/Footer";
 
 const Index = () => (
@@ -35,6 +36,7 @@ const Index = () => (
       <FAQSection />
       <ContactSection />
       <FinalCTASection />
+      <FounderSection />
     </main>
     <Footer />
   </>
