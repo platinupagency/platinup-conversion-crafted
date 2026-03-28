@@ -26,14 +26,14 @@ const FounderSection = () => (
 
         <AnimatedSection delay={0.2} className="text-center md:text-left">
           <h3 className="text-2xl font-bold font-display text-foreground mb-1">
-            Jakub
+            Tereza Toufarová
           </h3>
           <p className="text-sm text-gold font-semibold uppercase tracking-wide font-display mb-4">
-            Zakladatel & Stratég
+            Zakladatelka & Stratég
           </p>
           <div className="space-y-4 text-lg text-muted-foreground font-body">
             <p>
-              E-mail marketing mě baví, protože je to jeden z mála kanálů, kde se dá přesně změřit, co funguje – a co ne. Založil jsem PlatinUp, protože jsem viděl, kolik e-shopů nechává peníze na stole jen proto, že nemají čas nebo know-how na e-mailing.
+              PlatinUp jsem založila s vizí pomáhat e-shopům dosahovat jejich maximálního potenciálu. A také ukázat, že e-mail marketing je stejně důležitý jako placená reklama.
             </p>
             <p>
               Každému klientovi se věnuji osobně. Žádné šablony, žádné autopiloty – jen strategie šitá na míru a výsledky, které mluví za sebe.
