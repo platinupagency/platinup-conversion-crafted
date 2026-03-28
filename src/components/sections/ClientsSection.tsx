@@ -1,4 +1,3 @@
-import AnimatedSection from "@/components/AnimatedSection";
 import ceskeMydlo from "@/assets/clients/ceske-mydlo.png";
 import lesen from "@/assets/clients/lesen.webp";
 import va from "@/assets/clients/va.png";
@@ -19,17 +18,17 @@ const ClientsSection = () => (
       <p className="relative z-20 text-sm font-bold uppercase tracking-widest text-gold mb-10 font-display opacity-100">
         Spolupracovali jsme s
       </p>
-      <AnimatedSection delay={0.1}>
-        <div className="flex flex-wrap items-center justify-center gap-12 md:gap-16">
-          {clients.map((client) => (
+      <div className="overflow-hidden">
+        <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+          {[...clients, ...clients, ...clients].map((client, i) => (
             <div
-              key={client.name}
-              className="flex items-center justify-center group"
+              key={`${client.name}-${i}`}
+              className="flex items-center justify-center mx-8 md:mx-12 shrink-0"
             >
               <img
                 src={client.logo}
                 alt={client.name}
-                className={`${client.size} w-auto object-contain transition-all duration-500 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100`}
+                className={`${client.size} w-auto object-contain transition-all duration-500 grayscale opacity-60 hover:grayscale-0 hover:opacity-100`}
                 style={{ filter: "brightness(0.35)", transition: "filter 0.5s, opacity 0.5s" }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.filter = "brightness(1)";
@@ -41,7 +40,7 @@ const ClientsSection = () => (
             </div>
           ))}
         </div>
-      </AnimatedSection>
+      </div>
     </div>
   </section>
 );
