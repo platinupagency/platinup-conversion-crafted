@@ -3,7 +3,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import GradientMesh from "@/components/backgrounds/GradientMesh";
 
 const HeroSection = () => (
-  <section className="relative min-h-[100dvh] flex items-center px-6 pt-16 overflow-hidden">
+  <section className="relative min-h-[100dvh] flex items-center px-6 pt-16 overflow-hidden isolate">
     <GradientMesh />
     <div className="relative z-10 max-w-4xl mx-auto w-full py-16 md:py-24">
       <AnimatedSection>
