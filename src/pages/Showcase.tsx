@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AnimatedSection from "@/components/AnimatedSection";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import email1 from "@/assets/emails/email-1.png";
 import email2 from "@/assets/emails/email-2.png";
 import email3 from "@/assets/emails/email-3.png";
@@ -19,11 +22,30 @@ const allEmails = [
   { id: 7, src: email7, label: "Novinky" },
 ];
 
+const BackButton = () => {
+  const navigate = useNavigate();
+  return (
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={() => navigate(-1)}
+      className="gap-2"
+    >
+      <ArrowLeft className="w-4 h-4" />
+      Zpět na hlavní stránku
+    </Button>
+  );
+};
+
 const Showcase = () => (
   <>
     <Navbar />
     <main className="pt-24 pb-24 bg-background min-h-screen">
       <div className="container max-w-6xl mx-auto px-6">
+        <div className="mb-8">
+          <BackButton />
+        </div>
+
         <AnimatedSection>
           <div className="text-center mb-14">
             <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-3 font-body">
@@ -59,6 +81,10 @@ const Showcase = () => (
               </div>
             </AnimatedSection>
           ))}
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <BackButton />
         </div>
       </div>
     </main>
