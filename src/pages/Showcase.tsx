@@ -33,7 +33,7 @@ const Showcase = () => (
               Všechny ukázky e-mailů
             </h1>
             <p className="mt-4 text-muted-foreground font-body max-w-2xl mx-auto">
-              Kompletní portfolio e-mailových kampaní, které jsme vytvořili pro naše klienty.
+              Ukázky e-mailových kampaní, které jsme vytvořili pro naše klienty.
             </p>
           </div>
         </AnimatedSection>
