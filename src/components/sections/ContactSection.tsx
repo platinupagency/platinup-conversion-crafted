@@ -1,5 +1,6 @@
 import { useState } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
+import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -14,7 +15,7 @@ const ContactSection = () => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     const trimmed = {
@@ -36,12 +37,21 @@ const ContactSection = () => {
     }
 
     setLoading(true);
-    // Simulate submission
-    setTimeout(() => {
-      setLoading(false);
+    try {
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: { name: trimmed.name, email: trimmed.email, website: trimmed.website, message: trimmed.message },
+      });
+
+      if (error) throw error;
+
       setForm({ name: "", email: "", website: "", message: "" });
       toast({ title: "Odesláno!", description: "Ozveme se vám co nejdříve." });
-    }, 800);
+    } catch (err) {
+      console.error("Send error:", err);
+      toast({ title: "Chyba při odesílání.", description: "Zkuste to prosím znovu.", variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
