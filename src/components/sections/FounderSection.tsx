@@ -36,7 +36,7 @@ const FounderSection = () => (
               PlatinUp jsem založila s vizí pomáhat e-shopům dosahovat jejich maximálního potenciálu. A také ukázat, že e-mail marketing je stejně důležitý jako placená reklama.
             </p>
             <p>
-              Věřím, že za každým úspěšným e-shopem stojí promyšlená komunikace se zákazníky. Proto ke každému projektu přistupuji s důrazem na detail, data a reálné výsledky – ne prázdné sliby.
+              Věřím, že za každým úspěšným e-shopem stojí promyšlená komunikace se zákazníky. Proto ke každému projektu přistupujeme s důrazem na detail, data a reálné výsledky – ne prázdné sliby.
             </p>
           </div>
         </AnimatedSection>
