@@ -29,7 +29,7 @@ const FounderSection = () => (
             Tereza Toufarová
           </h3>
           <p className="text-sm text-gold font-semibold uppercase tracking-wide font-display mb-4">
-            Zakladatelka & Stratég
+            FOUNDER
           </p>
           <div className="space-y-4 text-lg text-muted-foreground font-body">
             <p>
