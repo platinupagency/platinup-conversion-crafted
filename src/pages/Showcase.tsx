@@ -38,59 +38,90 @@ const BackButton = () => {
   );
 };
 
-const Showcase = () => (
-  <>
-    <Navbar />
-    <main className="pt-24 pb-24 bg-background min-h-screen">
-      <div className="container max-w-6xl mx-auto px-6">
-        <div className="mb-8">
-          <BackButton />
-        </div>
+const Showcase = () => {
+  const navigate = useNavigate();
+  const topBtnRef = useRef<HTMLDivElement>(null);
+  const bottomBtnRef = useRef<HTMLDivElement>(null);
+  const [showFloating, setShowFloating] = useState(false);
 
-        <AnimatedSection>
-          <div className="text-center mb-14">
-            <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-3 font-body">
-              Naše práce
-            </p>
-            <h1 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
-              Všechny ukázky e-mailů
-            </h1>
-            <p className="mt-4 text-muted-foreground font-body max-w-2xl mx-auto">
-              Ukázky e-mailových kampaní, které jsme vytvořili pro naše klienty.
-            </p>
+  const checkVisibility = useCallback(() => {
+    const isVisible = (el: HTMLElement | null) => {
+      if (!el) return false;
+      const rect = el.getBoundingClientRect();
+      return rect.bottom > 0 && rect.top < window.innerHeight;
+    };
+    setShowFloating(!isVisible(topBtnRef.current) && !isVisible(bottomBtnRef.current));
+  }, []);
+
+  useEffect(() => {
+    checkVisibility();
+    window.addEventListener("scroll", checkVisibility, { passive: true });
+    return () => window.removeEventListener("scroll", checkVisibility);
+  }, [checkVisibility]);
+
+  return (
+    <>
+      <Navbar />
+      <main className="pt-24 pb-24 bg-background min-h-screen">
+        <div className="container max-w-6xl mx-auto px-6">
+          <div className="mb-8" ref={topBtnRef}>
+            <BackButton />
           </div>
-        </AnimatedSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {allEmails.map((email, i) => (
-            <AnimatedSection key={email.id} delay={i * 0.1}>
-              <div className="group relative rounded-xl overflow-hidden border border-border bg-card shadow-lg hover:shadow-2xl transition-shadow duration-500">
-                <div className="flex items-center gap-1.5 px-4 py-2.5 bg-muted border-b border-border">
-                  <span className="w-2.5 h-2.5 rounded-full bg-destructive/60" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-gold/60" />
-                  <span className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-                  <span className="ml-3 text-xs text-muted-foreground font-body truncate">{email.label}</span>
-                </div>
-                <div className="max-h-[500px] overflow-y-auto scrollbar-thin">
-                  <img
-                    src={email.src}
-                    alt={email.label}
-                    className="w-full h-auto"
-                    loading="lazy"
-                  />
-                </div>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
+          <AnimatedSection>
+            <div className="text-center mb-14">
+              <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-3 font-body">
+                Naše práce
+              </p>
+              <h1 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
+                Všechny ukázky e-mailů
+              </h1>
+              <p className="mt-4 text-muted-foreground font-body max-w-2xl mx-auto">
+                Ukázky e-mailových kampaní, které jsme vytvořili pro naše klienty.
+              </p>
+            </div>
+          </AnimatedSection>
 
-        <div className="mt-12 flex justify-center">
-          <BackButton />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {allEmails.map((email, i) => (
+              <AnimatedSection key={email.id} delay={i * 0.1}>
+                <div className="group relative rounded-xl overflow-hidden border border-border bg-card shadow-lg hover:shadow-2xl transition-shadow duration-500">
+                  <div className="flex items-center gap-1.5 px-4 py-2.5 bg-muted border-b border-border">
+                    <span className="w-2.5 h-2.5 rounded-full bg-destructive/60" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-gold/60" />
+                    <span className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
+                    <span className="ml-3 text-xs text-muted-foreground font-body truncate">{email.label}</span>
+                  </div>
+                  <div className="max-h-[500px] overflow-y-auto scrollbar-thin">
+                    <img
+                      src={email.src}
+                      alt={email.label}
+                      className="w-full h-auto"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+
+          <div className="mt-12 flex justify-center" ref={bottomBtnRef}>
+            <BackButton />
+          </div>
         </div>
-      </div>
-    </main>
-    <Footer />
-  </>
-);
+      </main>
+      <Footer />
+
+      {/* Floating back button */}
+      <button
+        onClick={() => navigate(-1)}
+        className={`fixed bottom-6 left-6 z-50 flex items-center gap-2 px-4 py-2.5 rounded-full border border-border bg-background/90 backdrop-blur-md shadow-lg text-sm font-medium text-foreground hover:bg-muted transition-all duration-300 ${showFloating ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"}`}
+      >
+        <ArrowLeft className="w-4 h-4" />
+        Zpět
+      </button>
+    </>
+  );
+};
 
 export default Showcase;
