@@ -37,9 +37,8 @@ const StatsSection = () => (
         {stats.map((s, i) => (
           <AnimatedSection key={i} delay={0.15 + i * 0.1}>
             <div className="rounded-xl border border-border bg-card/50 backdrop-blur-sm p-6 h-full">
-              <p className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
+              <p className="text-3xl md:text-4xl font-extrabold font-display text-gold">
                 {s.value}
-                <span className="inline-block w-2 h-2 rounded-full bg-gold ml-1 -translate-y-3" />
               </p>
               <p className="mt-3 text-muted-foreground font-body">{s.text}</p>
               <p className="mt-2 text-xs text-muted-foreground/60 font-body">
