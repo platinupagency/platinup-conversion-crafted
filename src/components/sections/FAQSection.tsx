@@ -56,9 +56,7 @@ Interní tým znamená:
 \u2013 fixní náklady
 \u2013 nejistý výsledek
 
-Navíc jeden člověk málokdy pokryje strategii, copywriting, data i technickou část.
-
-U nás máte sehraný tým specialistů, kteří už ví, co funguje. Bez nákladů a bez zdlouhavého testování.`,
+Navíc jeden člověk málokdy pokryje strategii, copywriting, data i technickou část.`,
   },
   {
     q: "Kolik času nám to zabere?",
