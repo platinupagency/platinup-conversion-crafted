@@ -36,7 +36,7 @@ const EmailShowcaseSection = () => (
                 <span className="w-2.5 h-2.5 rounded-full bg-destructive/60" />
                 <span className="w-2.5 h-2.5 rounded-full bg-gold/60" />
                 <span className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-                <span className="ml-3 text-xs text-muted-foreground font-body truncate">{email.label}</span>
+                
               </div>
               <div className="max-h-[420px] overflow-y-auto scrollbar-thin">
                 <img
