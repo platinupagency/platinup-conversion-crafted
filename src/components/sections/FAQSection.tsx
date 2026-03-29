@@ -17,7 +17,7 @@ Nejsme dodavatel. Jsme výkonnostní partner.`,
   },
   {
     q: "My už e-mail marketing děláme. Má to pro nás smysl?",
-    a: `Ve většině případů ano.
+    a: `Ano.
 
 Typicky vidíme:
 \u2013 pár základních automatizací
