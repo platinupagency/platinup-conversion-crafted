@@ -86,12 +86,6 @@ Plný potenciál se ale projeví postupně, jak se systém rozšiřuje a optimal
 E-mail marketing není jednorázová kampaň. Je to dlouhodobý kanál, který roste v čase.`,
   },
   {
-    q: "Jaké nástroje používáte?",
-    a: `Pracujeme s nástroji jako Ecomail, Klaviyo a dalšími.
-
-Výběr vždy přizpůsobujeme konkrétnímu e-shopu tak, aby dával smysl výkonově i ekonomicky.`,
-  },
-  {
     q: "Co když to nebude fungovat?",
     a: "Pak neplatíte.\n\nTo je celé.",
   },
