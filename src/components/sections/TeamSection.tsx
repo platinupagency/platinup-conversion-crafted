@@ -6,24 +6,21 @@ const TeamSection = () => (
     <div className="max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
-          Zároveň nejsme žádná obří agentura.
+          Malý tým. Velký dopad.
         </h2>
       </AnimatedSection>
       <AnimatedSection delay={0.1}>
         <p className="mt-6 text-lg text-muted-foreground font-body">
-          Jsme malý, přátelský tým lidí, kterým záleží na výsledcích.
+          Záměrně pracujeme jen s omezeným počtem klientů. Díky tomu se každému projektu věnujeme do detailu.
         </p>
         <div className="mt-8 space-y-3 text-lg text-muted-foreground font-body">
-          <p>Nebereme desítky klientů najednou.</p>
-          <p>Nejedete u nás v systému jako číslo.</p>
+          <p>Žádné šablonové řešení.</p>
+          <p>Žádné „číslo v systému".</p>
         </div>
       </AnimatedSection>
       <AnimatedSection delay={0.2}>
         <p className="mt-8 text-lg text-foreground font-semibold font-body">
-          Každý projekt řešíme individuálně, do detailu a dlouhodobě.
-        </p>
-        <p className="mt-4 text-lg text-muted-foreground font-body">
-          Chceme, aby pro vás e-mail marketing fungoval stejně, jako byste měli vlastní in-house tým. Jen bez nákladů a bez zdlouhavého budování.
+          S námi máte pocit, že máte vlastní e-mail marketing tým — bez fixních nákladů.
         </p>
       </AnimatedSection>
       <AnimatedSection delay={0.3}>

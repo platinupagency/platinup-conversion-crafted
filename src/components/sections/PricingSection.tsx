@@ -8,23 +8,23 @@ const PricingSection = () => (
     <div className="relative z-10 max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
-          A teď to nejdůležitější.
+          Model postavený na výkonu.
         </h2>
       </AnimatedSection>
       <AnimatedSection delay={0.1}>
         <div className="mt-8 space-y-2 text-lg text-muted-foreground font-body">
-          <p>Neúčtujeme hodinovku.</p>
-          <p>Neúčtujeme „správu".</p>
+          <p>Žádná hodinovka.</p>
+          <p>Žádná měsíční „správa".</p>
         </div>
         <p className="mt-6 text-xl font-bold text-foreground font-display">
-          Jsme placeni za výsledky.
+          Když nám to nefunguje, neplatíte.
         </p>
       </AnimatedSection>
       <AnimatedSection delay={0.2}>
-        <div className="mt-10 p-8 md:p-12 rounded-2xl border border-cta/20 bg-cta/5">
+        <div className="mt-10 p-8 md:p-12 rounded-2xl border border-foreground/10 bg-foreground/[0.03]">
           <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold font-display text-foreground leading-tight">
             Pokud e-mail marketing nevydělává,{" "}
-            <span className="text-cta">neplatíte nám ani korunu.</span>
+            <span className="text-brand">neplatíte nám ani korunu.</span>
           </p>
         </div>
       </AnimatedSection>

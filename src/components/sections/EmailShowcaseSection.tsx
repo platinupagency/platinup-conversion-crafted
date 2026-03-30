@@ -16,7 +16,7 @@ const EmailShowcaseSection = () => (
     <div className="container max-w-6xl mx-auto px-6">
       <AnimatedSection>
         <div className="text-center mb-14">
-          <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-3 font-body">
+          <p className="text-sm font-semibold uppercase tracking-widest text-brand mb-3 font-body">
             Naše práce
           </p>
           <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
@@ -34,7 +34,7 @@ const EmailShowcaseSection = () => (
             <div className="group relative rounded-xl overflow-hidden border border-border bg-card shadow-lg hover:shadow-2xl transition-shadow duration-500">
               <div className="flex items-center gap-1.5 px-4 py-2.5 bg-muted border-b border-border">
                 <span className="w-2.5 h-2.5 rounded-full bg-destructive/60" />
-                <span className="w-2.5 h-2.5 rounded-full bg-gold/60" />
+                <span className="w-2.5 h-2.5 rounded-full bg-brand/60" />
                 <span className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
                 
               </div>

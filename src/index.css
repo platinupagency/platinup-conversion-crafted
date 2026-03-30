@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,50 +6,50 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --background-alt: 210 20% 98%;
-    --foreground: 220 26% 10%;
+    --background: 30 15% 98%;
+    --background-alt: 30 12% 95%;
+    --foreground: 20 20% 12%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 220 26% 10%;
+    --card: 30 15% 98%;
+    --card-foreground: 20 20% 12%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 220 26% 10%;
+    --popover: 30 15% 98%;
+    --popover-foreground: 20 20% 12%;
 
-    --primary: 42 45% 55%;
+    --primary: 12 70% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 20% 98%;
-    --secondary-foreground: 220 26% 10%;
+    --secondary: 30 12% 95%;
+    --secondary-foreground: 20 20% 12%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 215 14% 45%;
+    --muted: 30 10% 93%;
+    --muted-foreground: 20 10% 46%;
 
-    --accent: 42 45% 55%;
-    --accent-foreground: 220 26% 10%;
+    --accent: 12 70% 55%;
+    --accent-foreground: 20 20% 12%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --cta: 217 91% 53%;
-    --cta-foreground: 0 0% 100%;
+    --cta: 20 20% 12%;
+    --cta-foreground: 30 15% 98%;
 
-    --gold: 42 45% 55%;
-    --gold-light: 42 50% 70%;
+    --brand: 12 70% 55%;
+    --brand-light: 16 65% 68%;
 
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 217 91% 53%;
-    --radius: 0.5rem;
+    --border: 30 10% 88%;
+    --input: 30 10% 88%;
+    --ring: 12 70% 55%;
+    --radius: 0.625rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217 91% 60%;
+    --sidebar-background: 30 15% 97%;
+    --sidebar-foreground: 20 10% 26%;
+    --sidebar-primary: 20 20% 10%;
+    --sidebar-primary-foreground: 30 15% 98%;
+    --sidebar-accent: 30 10% 94%;
+    --sidebar-accent-foreground: 20 20% 10%;
+    --sidebar-border: 30 10% 88%;
+    --sidebar-ring: 12 70% 60%;
   }
 }
 
@@ -59,30 +59,30 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     line-height: 1.6;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.005em;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    letter-spacing: -0.02em;
-    line-height: 1.15;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
   }
 }
 
 @layer utilities {
-  .gold-divider {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, hsl(var(--gold) / 0.35), transparent);
+  .brand-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(var(--brand) / 0.3), transparent);
   }
 }
 
-/* CTA button glow effect with fading side borders */
+/* CTA button style — dark, confident */
 .btn-cta-glow {
   position: relative;
   box-shadow:
-    0 0 8px -3px hsl(var(--cta) / 0.3),
-    0 0 18px -6px hsl(var(--cta) / 0.15);
+    0 4px 14px -4px hsl(var(--cta) / 0.25),
+    0 0 0 1px hsl(var(--cta) / 0.08);
 }
 
 .btn-cta-glow::before {
@@ -92,13 +92,9 @@
   border-radius: 9999px;
   padding: 1px;
   background: linear-gradient(
-    90deg,
-    hsl(var(--cta) / 0) 0%,
-    hsl(var(--cta) / 0.15) 3%,
-    hsl(var(--cta) / 0.5) 10%,
-    hsl(var(--cta) / 0.5) 90%,
-    hsl(var(--cta) / 0.15) 97%,
-    hsl(var(--cta) / 0) 100%
+    180deg,
+    hsl(var(--cta) / 0.15) 0%,
+    hsl(var(--cta) / 0.05) 100%
   );
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -110,6 +106,6 @@
 
 .btn-cta-glow:hover {
   box-shadow:
-    0 0 12px -2px hsl(var(--cta) / 0.4),
-    0 0 25px -6px hsl(var(--cta) / 0.2);
+    0 6px 20px -4px hsl(var(--cta) / 0.35),
+    0 0 0 1px hsl(var(--cta) / 0.12);
 }
