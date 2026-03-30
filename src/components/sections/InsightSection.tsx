@@ -50,7 +50,7 @@ const InsightSection = () => (
             <p>Ne v designu.</p>
             <p>Ne v tom, kolik e-mailů pošlete.</p>
           </div>
-          <p className="mt-4 text-xl font-bold text-brand font-display">
+          <p className="mt-4 text-xl font-bold text-gold font-display">
             Ale v systému za tím.
           </p>
         </div>

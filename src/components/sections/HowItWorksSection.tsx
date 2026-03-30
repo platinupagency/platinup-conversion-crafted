@@ -28,7 +28,7 @@ const HowItWorksSection = () => (
         <div className="mt-4 space-y-3">
           {items.map((item, i) => (
             <div key={i} className="flex items-start gap-3">
-              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
+              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
               <p className="text-lg text-foreground font-body">{item}</p>
             </div>
           ))}
@@ -37,7 +37,7 @@ const HowItWorksSection = () => (
       <AnimatedSection delay={0.3}>
         <div className="mt-10 flex gap-8">
           <p className="text-lg font-semibold text-foreground font-body">Vy se soustředíte na byznys.</p>
-          <p className="text-lg font-semibold text-brand font-body">My na výkon.</p>
+          <p className="text-lg font-semibold text-gold font-body">My na výkon.</p>
         </div>
       </AnimatedSection>
       <AnimatedSection delay={0.4}>

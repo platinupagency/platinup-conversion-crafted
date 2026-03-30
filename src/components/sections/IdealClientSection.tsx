@@ -16,15 +16,15 @@ const IdealClientSection = () => (
           <p>E-shop, který:</p>
           <div className="pl-4 space-y-2">
             <div className="flex items-start gap-3">
-              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
+              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
               <p>má návštěvnost</p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
+              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
               <p>má zákazníky</p>
             </div>
             <div className="flex items-start gap-3">
-              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
+              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
               <p>a chce z toho vytěžit maximum</p>
             </div>
           </div>

@@ -70,15 +70,15 @@ const ContactSection = () => {
               </p>
               <div className="mt-8 space-y-4 text-muted-foreground font-body">
                 <div className="flex items-start gap-3">
-                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
+                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
                   <p>Zanalyzujeme váš aktuální stav</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
+                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
                   <p>Ukážeme, kde leží nevyužitý potenciál</p>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
+                  <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
                   <p>Navrhneme konkrétní postup</p>
                 </div>
               </div>

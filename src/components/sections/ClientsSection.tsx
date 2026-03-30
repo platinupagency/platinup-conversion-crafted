@@ -15,7 +15,7 @@ const clients = [
 const ClientsSection = () => (
   <section className="relative z-10 py-20 bg-background">
     <div className="container max-w-5xl mx-auto px-6 text-center">
-      <p className="relative z-20 text-sm font-bold uppercase tracking-widest text-brand mb-10 font-display opacity-100">
+      <p className="relative z-20 text-sm font-bold uppercase tracking-widest text-gold mb-10 font-display opacity-100">
         Spolupracovali jsme s
       </p>
       <div className="overflow-hidden">
