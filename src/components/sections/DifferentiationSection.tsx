@@ -7,7 +7,7 @@ const DifferentiationSection = () => (
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Nejsme „správci".
         </h2>
-        <p className="mt-2 text-xl font-semibold text-gold font-display">
+        <p className="mt-2 text-xl font-semibold text-brand font-display">
           Jsme výkonnostní partner.
         </p>
       </AnimatedSection>

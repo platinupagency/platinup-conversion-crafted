@@ -25,7 +25,7 @@ const FinalCTASection = () => (
         </div>
       </AnimatedSection>
       <AnimatedSection delay={0.2}>
-        <div className="gold-divider my-12 max-w-xs" />
+        <div className="brand-divider my-12 max-w-xs" />
         <h3 className="text-2xl md:text-3xl font-bold font-display text-foreground">
           Chcete zjistit, kolik peněz vám teď utíká?
         </h3>

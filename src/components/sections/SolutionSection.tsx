@@ -27,7 +27,7 @@ const SolutionSection = () => (
         <div className="mt-10 space-y-4">
           {items.map((item, i) => (
             <div key={i} className="flex items-start gap-3">
-              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
+              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-brand shrink-0" />
               <p className="text-lg text-foreground font-body">{item}</p>
             </div>
           ))}
