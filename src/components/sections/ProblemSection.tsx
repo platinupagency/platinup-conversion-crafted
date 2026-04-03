@@ -5,33 +5,48 @@ const ProblemSection = () => (
     <div className="max-w-4xl mx-auto text-center">
       <AnimatedSection>
         <p className="text-xl md:text-2xl font-display font-bold text-foreground italic">
-          „My už e-mail marketing děláme."
+          Většina e-shopů už e-mail marketing „dělá"
         </p>
       </AnimatedSection>
 
       <AnimatedSection delay={0.1}>
-        <p className="mt-8 text-lg text-muted-foreground font-body">
-          To slyšíme často.
-        </p>
-        <p className="mt-4 text-lg text-muted-foreground font-body">
-          A ve většině případů to znamená:
-        </p>
+        <ul className="mt-8 space-y-2 text-lg text-muted-foreground font-body list-disc list-inside text-left max-w-md mx-auto">
+          <li>Mají nastavený opuštěný košík.</li>
+          <li>Občas rozešlou slevovou kampaň.</li>
+          <li>Posílají newsletter celé databázi.</li>
+        </ul>
       </AnimatedSection>
 
       <AnimatedSection delay={0.2}>
-        <ul className="mt-6 space-y-2 text-lg text-muted-foreground font-body list-disc list-inside text-left max-w-md mx-auto">
-          <li>nastavený opuštěný košík</li>
-          <li>občasná kampaň při slevě</li>
-          <li>newsletter pro celou databázi</li>
-        </ul>
+        <p className="mt-8 text-lg text-muted-foreground font-body">
+          A něco to přinese.
+        </p>
+        <p className="mt-4 text-lg font-semibold text-foreground font-body">
+          Jenže skutečný potenciál zůstává nevyužitý.
+        </p>
       </AnimatedSection>
 
       <AnimatedSection delay={0.3}>
         <p className="mt-8 text-lg text-muted-foreground font-body">
-          A ano — něco to vydělá.
+          Rozdíl mezi průměrným a výkonným e-mail marketingem není v designu ani v počtu odeslaných e-mailů.
         </p>
         <p className="mt-4 text-lg font-semibold text-foreground font-body">
-          Ale jen zlomek toho, co by mohlo.
+          Rozdíl je v systému, který stojí za tím.
+        </p>
+      </AnimatedSection>
+
+      <AnimatedSection delay={0.4}>
+        <ul className="mt-8 space-y-2 text-lg text-muted-foreground font-body list-disc list-inside text-left max-w-md mx-auto">
+          <li>V promyšlené segmentaci.</li>
+          <li>V práci s chováním zákazníků.</li>
+          <li>Ve správném načasování.</li>
+          <li>V rozhodování podle dat.</li>
+        </ul>
+      </AnimatedSection>
+
+      <AnimatedSection delay={0.5}>
+        <p className="mt-8 text-lg font-semibold text-foreground font-body">
+          Teprve tehdy se e-mail marketing stává jedním z hlavních prodejních kanálů.
         </p>
       </AnimatedSection>
     </div>
