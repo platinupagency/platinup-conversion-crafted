@@ -12,10 +12,10 @@ const IdealClientSection = () => (
 
       <AnimatedSection delay={0.1}>
         <p className="mt-8 text-lg text-muted-foreground font-body">
-          Spolupracujeme se značkami, které mají kvalitní produkt, stabilní byznys a ambici růst. Nepracujeme s každým – kapacitu držíme omezenou, aby každý projekt dostal maximální pozornost.
+          Spolupracujeme se značkami, které mají <span className="font-semibold text-foreground">kvalitní produkt</span>, <span className="font-semibold text-foreground">stabilní byznys</span> a <span className="font-semibold text-foreground">ambici růst</span>. Nepracujeme s každým – kapacitu držíme omezenou, aby každý projekt dostal <span className="font-semibold text-foreground">maximální pozornost</span>.
         </p>
         <p className="mt-4 text-lg text-muted-foreground font-body">
-          Každý projekt řešíme individuálně, do detailu a dlouhodobě – jako byste měli vlastní in-house tým. Jen bez nákladů a bez zdlouhavého budování.
+          Každý projekt řešíme <span className="font-semibold text-foreground">individuálně</span>, do detailu a <span className="font-semibold text-foreground">dlouhodobě</span> – jako byste měli vlastní <span className="font-semibold text-foreground">in-house tým</span>. Jen bez nákladů a bez zdlouhavého budování.
         </p>
       </AnimatedSection>
 
