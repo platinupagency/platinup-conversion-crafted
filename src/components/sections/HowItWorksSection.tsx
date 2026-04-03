@@ -9,7 +9,7 @@ const items = [
 
 const HowItWorksSection = () => (
   <section className="py-20 md:py-28 px-6">
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto text-center">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Jak spolupráce vypadá?
@@ -25,7 +25,7 @@ const HowItWorksSection = () => (
       </AnimatedSection>
       <AnimatedSection delay={0.2}>
         <p className="mt-8 text-lg text-foreground font-body">Budujeme systém, který:</p>
-        <div className="mt-4 space-y-3">
+        <div className="mt-4 space-y-3 text-left max-w-sm mx-auto">
           {items.map((item, i) => (
             <div key={i} className="flex items-start gap-3">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
@@ -35,7 +35,7 @@ const HowItWorksSection = () => (
         </div>
       </AnimatedSection>
       <AnimatedSection delay={0.3}>
-        <div className="mt-10 flex gap-8">
+        <div className="mt-10 flex justify-center gap-8">
           <p className="text-lg font-semibold text-foreground font-body">Vy se soustředíte na byznys.</p>
           <p className="text-lg font-semibold text-gold font-body">My na výkon.</p>
         </div>

@@ -93,7 +93,7 @@ E-mail marketing není jednorázová kampaň. Je to dlouhodobý kanál, který r
 
 const FAQSection = () => (
   <section className="py-20 md:py-28 px-6 bg-background-alt">
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto text-center">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Časté otázky
@@ -103,7 +103,7 @@ const FAQSection = () => (
         </p>
       </AnimatedSection>
       <AnimatedSection delay={0.1}>
-        <Accordion type="single" collapsible className="mt-10">
+        <Accordion type="single" collapsible className="mt-10 text-left">
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`faq-${i}`} className="border-border/60">
               <AccordionTrigger className="text-left text-base md:text-lg font-semibold font-display text-foreground hover:text-gold transition-colors py-5">
