@@ -1,8 +1,10 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
+import FloatingOrbs from "@/components/backgrounds/FloatingOrbs";
 
 const IdealClientSection = () => (
-  <section className="py-20 md:py-28 px-6">
+  <section className="relative py-20 md:py-28 px-6 overflow-hidden">
+    <FloatingOrbs />
     <div className="max-w-3xl mx-auto">
       <AnimatedSection>
         <h2 className="text-2xl md:text-3xl font-extrabold font-display text-foreground text-center">
