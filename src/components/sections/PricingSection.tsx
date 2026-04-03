@@ -6,31 +6,33 @@ import { openCalendly } from "@/lib/calendly";
 const PricingSection = () => (
   <section className="relative py-20 md:py-28 px-6 bg-background-alt overflow-hidden">
     <GradientMesh variant="pricing" />
-    <div className="relative z-10 max-w-4xl mx-auto text-center">
+    <div className="relative z-10 max-w-2xl mx-auto">
       <AnimatedSection>
-        <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
+        <h2 className="text-2xl md:text-3xl font-extrabold font-display text-foreground text-center">
           A teď to nejdůležitější.
         </h2>
       </AnimatedSection>
+
       <AnimatedSection delay={0.1}>
-        <div className="mt-8 space-y-2 text-lg text-muted-foreground font-body">
-          <p>Neúčtujeme hodinovku.</p>
-          <p>Neúčtujeme „správu".</p>
-        </div>
-        <p className="mt-6 text-xl font-bold text-foreground font-display">
+        <p className="mt-8 text-lg text-muted-foreground font-body">
+          Neúčtujeme hodinovku. Neúčtujeme „správu".
+        </p>
+        <p className="mt-4 text-xl font-bold text-foreground font-display">
           Jsme placeni za výsledky.
         </p>
       </AnimatedSection>
+
       <AnimatedSection delay={0.2}>
         <div className="mt-10 p-8 md:p-12 rounded-2xl border border-cta/20 bg-cta/5 text-center">
-          <p className="text-3xl md:text-4xl lg:text-5xl font-extrabold font-display text-foreground leading-tight">
+          <p className="text-2xl md:text-3xl lg:text-4xl font-extrabold font-display text-foreground leading-tight">
             Pokud e-mail marketing nevydělává,{" "}
             <span className="text-cta">neplatíte nám ani korunu.</span>
           </p>
         </div>
       </AnimatedSection>
+
       <AnimatedSection delay={0.3}>
-        <div className="mt-10">
+        <div className="mt-10 text-center">
           <Button variant="cta" size="lg" className="text-base px-8 py-5" onClick={openCalendly}>
             Začít vydělávat z e-mailů
           </Button>

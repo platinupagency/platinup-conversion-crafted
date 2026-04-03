@@ -50,13 +50,7 @@ Pokud e-mail marketing nevydělává, neplatíte nám ani korunu. Naše motivace
     q: "Není výhodnější najmout si vlastní in-house tým?",
     a: `Ve většině případů ne.
 
-Interní tým znamená:
-\u2013 nábor
-\u2013 školení
-\u2013 fixní náklady
-\u2013 nejistý výsledek
-
-Navíc jeden člověk málokdy pokryje strategii, copywriting, data i technickou část.`,
+Interní tým znamená nábor, školení, fixní náklady a nejistý výsledek. Navíc jeden člověk málokdy pokryje strategii, copywriting, data i technickou část.`,
   },
   {
     q: "Kolik času nám to zabere?",
@@ -68,22 +62,15 @@ Vy máte přehled o výsledcích, ale nemusíte řešit operativu.`,
   },
   {
     q: "S jakými e-shopy spolupracujete?",
-    a: `Se značkami, které mají:
-\u2013 kvalitní produkt
-\u2013 reálný byznys
-\u2013 existující zákazníky a návštěvnost
+    a: `Se značkami, které mají kvalitní produkt, reálný byznys a existující zákazníky s návštěvností.
 
-Nepracujeme s dropshippingem ani projekty bez základu.
-
-Hledáme e-shopy, které chtějí růst dlouhodobě.`,
+Nepracujeme s dropshippingem ani projekty bez základu. Hledáme e-shopy, které chtějí růst dlouhodobě.`,
   },
   {
     q: "Jak rychle uvidíme výsledky?",
     a: `První výsledky se obvykle začnou objevovat v řádu týdnů.
 
-Plný potenciál se ale projeví postupně, jak se systém rozšiřuje a optimalizuje.
-
-E-mail marketing není jednorázová kampaň. Je to dlouhodobý kanál, který roste v čase.`,
+Plný potenciál se ale projeví postupně, jak se systém rozšiřuje a optimalizuje. E-mail marketing není jednorázová kampaň. Je to dlouhodobý kanál, který roste v čase.`,
   },
   {
     q: "Co když to nebude fungovat?",
@@ -93,12 +80,12 @@ E-mail marketing není jednorázová kampaň. Je to dlouhodobý kanál, který r
 
 const FAQSection = () => (
   <section className="py-20 md:py-28 px-6 bg-background-alt">
-    <div className="max-w-4xl mx-auto text-center">
+    <div className="max-w-2xl mx-auto">
       <AnimatedSection>
-        <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
+        <h2 className="text-2xl md:text-3xl font-extrabold font-display text-foreground text-center">
           Časté otázky
         </h2>
-        <p className="mt-2 text-lg text-muted-foreground font-body">
+        <p className="mt-2 text-lg text-muted-foreground font-body text-center">
           Odpovědi na to, co nás klienti nejčastěji ptají.
         </p>
       </AnimatedSection>

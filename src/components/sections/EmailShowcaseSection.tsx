@@ -12,17 +12,17 @@ const featuredEmails = [
 ];
 
 const EmailShowcaseSection = () => (
-  <section className="py-24 bg-background-alt">
-    <div className="container max-w-6xl mx-auto px-6">
+  <section className="py-20 md:py-28 px-6 bg-background-alt">
+    <div className="max-w-4xl mx-auto">
       <AnimatedSection>
         <div className="text-center mb-14">
           <p className="text-sm font-semibold uppercase tracking-widest text-gold mb-3 font-body">
             Naše práce
           </p>
-          <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
+          <h2 className="text-2xl md:text-3xl font-extrabold font-display text-foreground">
             E-maily, které prodávají
           </h2>
-          <p className="mt-4 text-muted-foreground font-body max-w-2xl mx-auto">
+          <p className="mt-4 text-lg text-muted-foreground font-body max-w-2xl mx-auto">
             Ukázky e-mailů, které jsme vytvořili pro naše klienty.
           </p>
         </div>
@@ -36,7 +36,6 @@ const EmailShowcaseSection = () => (
                 <span className="w-2.5 h-2.5 rounded-full bg-destructive/60" />
                 <span className="w-2.5 h-2.5 rounded-full bg-gold/60" />
                 <span className="w-2.5 h-2.5 rounded-full bg-green-400/60" />
-                
               </div>
               <div className="max-h-[420px] overflow-y-auto scrollbar-thin">
                 <img
