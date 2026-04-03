@@ -4,7 +4,7 @@ import { openCalendly } from "@/lib/calendly";
 
 const HowItWorksSection = () => (
   <section className="py-20 md:py-28 px-6">
-    <div className="max-w-2xl mx-auto">
+    <div className="max-w-3xl mx-auto">
       <AnimatedSection>
         <h2 className="text-2xl md:text-3xl font-extrabold font-display text-foreground text-center">
           Jak spolupráce probíhá
