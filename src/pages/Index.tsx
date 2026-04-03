@@ -12,6 +12,7 @@ import IdealClientSection from "@/components/sections/IdealClientSection";
 import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import PricingSection from "@/components/sections/PricingSection";
 import FAQSection from "@/components/sections/FAQSection";
+import BookingSection from "@/components/sections/BookingSection";
 import ContactSection from "@/components/sections/ContactSection";
 
 import FinalCTASection from "@/components/sections/FinalCTASection";
@@ -35,6 +36,7 @@ const Index = () => (
       <HowItWorksSection />
       <PricingSection />
       <FAQSection />
+      <BookingSection />
       <ContactSection />
       <FinalCTASection />
       <FounderSection />
