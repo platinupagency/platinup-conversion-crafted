@@ -1,7 +1,8 @@
 import AnimatedSection from "@/components/AnimatedSection";
+import { Button } from "@/components/ui/button";
 
 const IdealClientSection = () => (
-  <section className="py-20 md:py-28 px-6 bg-background-alt">
+  <section className="py-20 md:py-28 px-6">
     <div className="max-w-2xl mx-auto">
       <AnimatedSection>
         <h2 className="text-2xl md:text-3xl font-extrabold font-display text-foreground text-center">
@@ -14,10 +15,10 @@ const IdealClientSection = () => (
 
       <AnimatedSection delay={0.1}>
         <p className="mt-6 text-lg text-muted-foreground font-body text-center">
-          Nepracujeme s každým.
+          Nepracujeme s každým. Kapacitu držíme omezenou, aby každý projekt dostal maximální pozornost.
         </p>
-        <p className="text-lg text-muted-foreground font-body text-center">
-          Kapacitu držíme omezenou, aby každý projekt dostal maximální pozornost.
+        <p className="mt-4 text-lg text-muted-foreground font-body text-center">
+          Každý projekt řešíme individuálně, do detailu a dlouhodobě — jako byste měli vlastní in-house tým. Jen bez nákladů a bez zdlouhavého budování.
         </p>
       </AnimatedSection>
 
@@ -28,6 +29,14 @@ const IdealClientSection = () => (
         <p className="mt-4 text-lg font-semibold text-foreground font-body text-center">
           Pokud chcete vybudovat dlouhodobě výkonný systém, spolupráce s námi dává smysl.
         </p>
+      </AnimatedSection>
+
+      <AnimatedSection delay={0.3}>
+        <div className="mt-10 text-center">
+          <Button variant="cta" size="lg" className="text-base px-8 py-5" onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}>
+            Zjistit, jestli se hodíme
+          </Button>
+        </div>
       </AnimatedSection>
     </div>
   </section>
