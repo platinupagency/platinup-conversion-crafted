@@ -36,6 +36,7 @@ const Index = () => (
       <HowItWorksSection />
       <PricingSection />
       <FAQSection />
+      <BookingSection />
       <ContactSection />
       <FinalCTASection />
       <FounderSection />
