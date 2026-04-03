@@ -8,7 +8,7 @@ const Navbar = () => (
         Platin<span className="text-gold">Up</span>
       </Link>
       <Button variant="cta" size="sm">
-        Domluvit hovor
+        Domluvit konzultaci
       </Button>
     </div>
   </nav>

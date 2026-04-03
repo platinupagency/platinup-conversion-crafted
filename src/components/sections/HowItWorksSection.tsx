@@ -43,7 +43,7 @@ const HowItWorksSection = () => (
       <AnimatedSection delay={0.4}>
         <div className="mt-10">
           <Button variant="cta" size="lg" className="text-base px-8 py-5">
-            Domluvit hovor zdarma
+            Domluvit konzultaci zdarma
           </Button>
         </div>
       </AnimatedSection>

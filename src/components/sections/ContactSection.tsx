@@ -61,7 +61,7 @@ const ContactSection = () => {
           <div>
             <AnimatedSection>
               <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
-                Domluvte si hovor zdarma
+                Domluvte si konzultaci zdarma
               </h2>
             </AnimatedSection>
             <AnimatedSection delay={0.1}>

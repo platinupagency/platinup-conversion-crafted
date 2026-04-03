@@ -33,7 +33,7 @@ const FinalCTASection = () => (
           Domluvme si krátkou konzultaci a podíváme se na váš e-shop konkrétně.
         </p>
         <Button variant="cta" size="lg" className="mt-8 text-base px-10 py-6">
-          Domluvit hovor zdarma
+          Domluvit konzultaci zdarma
         </Button>
       </AnimatedSection>
     </div>
