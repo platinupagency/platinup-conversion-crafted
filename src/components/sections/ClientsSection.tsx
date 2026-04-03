@@ -24,7 +24,7 @@ const ClientsSection = () => (
         {[...clients, ...clients, ...clients, ...clients, ...clients, ...clients].map((client, i) => (
             <div
               key={`${client.name}-${i}`}
-              className="flex items-center justify-center mx-8 md:mx-12 shrink-0"
+              className="flex items-center justify-center mx-4 md:mx-12 shrink-0"
             >
               <img
                 src={client.logo}
