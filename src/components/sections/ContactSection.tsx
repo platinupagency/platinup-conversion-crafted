@@ -61,7 +61,7 @@ const ContactSection = () => {
           <div className="text-center md:text-left">
             <AnimatedSection>
               <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
-                Domluvte si konzultaci zdarma
+                Máte dotaz? Napište nám
               </h2>
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
