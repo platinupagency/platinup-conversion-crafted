@@ -10,7 +10,6 @@ const BookingSection = () => {
     const container = widgetRef.current;
     if (!container) return;
 
-    // Create the widget div outside React's tree
     const widget = document.createElement("div");
     widget.className = "calendly-inline-widget";
     widget.setAttribute("data-url", CALENDLY_URL);
@@ -18,8 +17,15 @@ const BookingSection = () => {
     widget.style.height = "700px";
     container.appendChild(widget);
 
+    // Re-init Calendly since the element was added after script load
+    if ((window as any).Calendly) {
+      (window as any).Calendly.initInlineWidget({
+        url: CALENDLY_URL,
+        parentElement: widget,
+      });
+    }
+
     return () => {
-      // Safe cleanup: remove only what we added
       while (container.firstChild) {
         container.removeChild(container.firstChild);
       }
