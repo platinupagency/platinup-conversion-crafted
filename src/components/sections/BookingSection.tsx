@@ -1,16 +1,28 @@
 import { useEffect, useRef } from "react";
 import AnimatedSection from "@/components/AnimatedSection";
 
+const CALENDLY_URL = "https://calendly.com/toufarovat17/konzultace-e-mail-marketingu";
+
 const BookingSection = () => {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const widgetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
+    const container = widgetRef.current;
+    if (!container) return;
+
+    // Create the widget div outside React's tree
+    const widget = document.createElement("div");
+    widget.className = "calendly-inline-widget";
+    widget.setAttribute("data-url", CALENDLY_URL);
+    widget.style.minWidth = "320px";
+    widget.style.height = "700px";
+    container.appendChild(widget);
+
     return () => {
-      document.body.removeChild(script);
+      // Safe cleanup: remove only what we added
+      while (container.firstChild) {
+        container.removeChild(container.firstChild);
+      }
     };
   }, []);
 
@@ -27,15 +39,9 @@ const BookingSection = () => {
         </AnimatedSection>
         <AnimatedSection delay={0.2}>
           <div
-            ref={containerRef}
+            ref={widgetRef}
             className="mt-10 rounded-xl overflow-hidden"
-          >
-            <div
-              className="calendly-inline-widget"
-              data-url="https://calendly.com/toufarovat17/konzultace-e-mail-marketingu"
-              style={{ minWidth: 320, height: 700 }}
-            />
-          </div>
+          />
         </AnimatedSection>
       </div>
     </section>
