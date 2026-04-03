@@ -24,7 +24,7 @@ const SolutionSection = () => (
       </AnimatedSection>
 
       <AnimatedSection delay={0.1}>
-        <div className="mt-10 space-y-2">
+        <div className="mt-10 space-y-3">
           {items.map((item, i) => (
             <div
               key={i}
