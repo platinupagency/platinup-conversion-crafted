@@ -82,9 +82,9 @@ const ContactSection = () => {
                   <p>Navrhneme konkrétní postup</p>
                 </div>
               </div>
-              <p className="mt-8 text-sm text-muted-foreground font-body">
+              <p className="mt-8 text-base text-muted-foreground font-body italic">
                 Pokud e-mail marketing nic nevydělá,{" "}
-                <span className="font-semibold text-foreground">neplatíte nám ani korunu.</span>
+                <span className="font-semibold text-gold not-italic">neplatíte nám ani korunu.</span>
               </p>
             </AnimatedSection>
           </div>
