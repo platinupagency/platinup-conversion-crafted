@@ -50,7 +50,7 @@ const StatsSection = () => (
       </div>
 
       <AnimatedSection delay={0.8}>
-        <p className="mt-10 text-lg text-muted-foreground font-body">
+        <p className="mt-10 text-lg text-muted-foreground font-body text-center">
           Jinými slovy — <span className="font-semibold text-foreground">peníze už máte ve své databázi.</span> Jen z ní netěžíte maximum.
         </p>
       </AnimatedSection>
