@@ -38,8 +38,8 @@ const Index = () => (
       <FAQSection />
       <BookingSection />
       <ContactSection />
-      <FinalCTASection />
       <FounderSection />
+      <FinalCTASection />
     </main>
     <Footer />
   </>
