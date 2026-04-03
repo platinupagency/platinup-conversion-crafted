@@ -20,14 +20,12 @@ const HeroSection = () => (
       </AnimatedSection>
       <AnimatedSection delay={0.2}>
         <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto font-body text-left">
-          Vaše databáze má větší hodnotu, než si myslíte.<br />
-          Pomáháme kvalitním e-shopům proměnit e-mail marketing v stabilní a dlouhodobý zdroj tržeb.
+          Vaše databáze má větší hodnotu, než si myslíte.
         </p>
       </AnimatedSection>
       <AnimatedSection delay={0.3}>
         <p className="mt-4 text-muted-foreground font-body text-left max-w-2xl mx-auto">
-          Ne stavbou náhodných kampaní.<br />
-          Ale vybudováním systému, který pracuje každý den.
+          Pomáháme kvalitním e-shopům proměnit e-mail marketing v stabilní a dlouhodobý zdroj tržeb.
         </p>
       </AnimatedSection>
       <AnimatedSection delay={0.4}>
