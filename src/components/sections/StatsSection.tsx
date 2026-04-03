@@ -4,9 +4,9 @@ import GradientMesh from "@/components/backgrounds/GradientMesh";
 
 const stats = [
   { value: "5–25×", text: "dražší je získání nového zákazníka než udržení stávajícího.", source: "Harvard Business School" },
-  { value: "42 : 1", text: "průměrná návratnost e-mail marketingu — za každých 100 Kč investovaných se vrátí přibližně 4 200 Kč.", source: "DMA" },
+  { value: "42 : 1", text: "průměrná návratnost e-mail marketingu – za každých 100 Kč investovaných se vrátí přibližně 4 200 Kč.", source: "DMA" },
   { value: "81 %", text: "zákazníků pravděpodobněji nakoupí znovu na základě personalizovaných e-mailů.", source: "eMarketer" },
-  { value: "4,29 %", text: "průměrný konverzní poměr e-mail marketingu — více než většina ostatních kanálů.", source: "Monetate" },
+  { value: "4,29 %", text: "průměrný konverzní poměr e-mail marketingu – více než většina ostatních kanálů.", source: "Monetate" },
   { value: "49 %", text: "lidí chce dostávat marketingové e-maily od svých oblíbených značek každý týden.", source: "Statista" },
   { value: "59 %", text: "zákazníků říká, že e-maily ovlivňují jejich nákupní rozhodování.", source: "SaleCycle" },
 ];
@@ -51,7 +51,7 @@ const StatsSection = () => (
 
       <AnimatedSection delay={0.8}>
         <p className="mt-10 text-lg text-muted-foreground font-body text-center">
-          Jinými slovy — <span className="font-semibold text-foreground">peníze už máte ve své databázi.</span> Jen z ní netěžíte maximum.
+          Jinými slovy – <span className="font-semibold text-foreground">peníze už máte ve své databázi.</span> Jen z ní netěžíte maximum.
         </p>
       </AnimatedSection>
 

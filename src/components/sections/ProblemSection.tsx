@@ -20,7 +20,7 @@ const ProblemSection = () => (
 
       <AnimatedSection delay={0.2}>
         <p className="mt-8 text-lg text-muted-foreground font-body">
-          Rozdíl mezi průměrným a výkonným e-mail marketingem není v designu ani v počtu odeslaných e-mailů. Rozdíl je v systému, který stojí za tím — v promyšlené segmentaci, v práci s chováním zákazníků, ve správném načasování a v rozhodování podle dat.
+          Rozdíl mezi průměrným a výkonným e-mail marketingem není v designu ani v počtu odeslaných e-mailů. Rozdíl je v systému, který stojí za tím – v promyšlené segmentaci, v práci s chováním zákazníků, ve správném načasování a v rozhodování podle dat.
         </p>
       </AnimatedSection>
 

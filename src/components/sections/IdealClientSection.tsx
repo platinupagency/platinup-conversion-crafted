@@ -18,7 +18,7 @@ const IdealClientSection = () => (
           Nepracujeme s každým. Kapacitu držíme omezenou, aby každý projekt dostal maximální pozornost.
         </p>
         <p className="mt-4 text-lg text-muted-foreground font-body text-center">
-          Každý projekt řešíme individuálně, do detailu a dlouhodobě — jako byste měli vlastní in-house tým. Jen bez nákladů a bez zdlouhavého budování.
+          Každý projekt řešíme individuálně, do detailu a dlouhodobě – jako byste měli vlastní in-house tým. Jen bez nákladů a bez zdlouhavého budování.
         </p>
       </AnimatedSection>
 

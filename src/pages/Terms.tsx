@@ -48,7 +48,7 @@ const Terms = () => (
         <p>
           Cena za služby je stanovena individuálně na základě rozsahu spolupráce
           a je specifikována v konkrétní nabídce či smlouvě. Poskytovatel
-          využívá model odměňování založený na výkonnosti — pokud e-mail
+          využívá model odměňování založený na výkonnosti – pokud e-mail
           marketing negeneruje měřitelné výsledky, objednatel neplatí.
         </p>
         <p>
