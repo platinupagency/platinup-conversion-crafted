@@ -33,10 +33,12 @@ const HeroSection = () => (
           <Button variant="cta" size="lg" className="text-base px-8 py-6 w-fit" onClick={openCalendly}>
             Domluvit konzultaci zdarma
           </Button>
-          <p className="text-lg text-muted-foreground font-body">
-            Pokud e-mail marketing nic nevydělá,{" "}
-            <span className="font-bold text-foreground">neplatíte nám ani korunu.</span>
-          </p>
+          <div className="inline-flex items-center gap-3 px-6 py-3 rounded-full border border-gold/20 bg-gold/5 backdrop-blur-sm">
+            <span className="text-lg text-muted-foreground font-body">
+              Pokud e-mail marketing nic nevydělá,{" "}
+              <span className="font-bold text-gold">neplatíte nám ani korunu.</span>
+            </span>
+          </div>
         </div>
       </AnimatedSection>
     </div>
