@@ -1,8 +1,17 @@
+import { Helmet } from "react-helmet-async";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const Terms = () => (
   <div className="min-h-screen bg-background text-foreground font-body">
+    <Helmet>
+      <title>Obchodní podmínky – PlatinUp</title>
+      <meta name="description" content="Obchodní podmínky společnosti BullWebs s.r.o. pro služby e-mail marketingu PlatinUp." />
+      <link rel="canonical" href="https://www.platinup.cz/obchodni-podminky" />
+      <meta property="og:title" content="Obchodní podmínky – PlatinUp" />
+      <meta property="og:description" content="Obchodní podmínky společnosti BullWebs s.r.o. pro služby e-mail marketingu PlatinUp." />
+      <meta property="og:url" content="https://www.platinup.cz/obchodni-podminky" />
+    </Helmet>
     <Navbar />
     <main className="pt-32 pb-20 px-6">
       <div className="max-w-3xl mx-auto prose prose-neutral dark:prose-invert">
