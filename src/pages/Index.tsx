@@ -13,7 +13,7 @@ import HowItWorksSection from "@/components/sections/HowItWorksSection";
 import PricingSection from "@/components/sections/PricingSection";
 import FAQSection from "@/components/sections/FAQSection";
 import ContactSection from "@/components/sections/ContactSection";
-import BookingSection from "@/components/sections/BookingSection";
+
 import FinalCTASection from "@/components/sections/FinalCTASection";
 import FounderSection from "@/components/sections/FounderSection";
 import Footer from "@/components/Footer";
