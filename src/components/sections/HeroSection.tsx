@@ -24,7 +24,7 @@ const HeroSection = () => (
         </p>
       </AnimatedSection>
       <AnimatedSection delay={0.3}>
-        <p className="mt-4 text-muted-foreground font-body text-left max-w-2xl mx-auto">
+        <p className="mt-4 text-muted-foreground font-body text-left max-w-2xl mx-auto text-lg">
           Pomáháme kvalitním e-shopům proměnit e-mail marketing v stabilní a dlouhodobý zdroj tržeb.
         </p>
       </AnimatedSection>
