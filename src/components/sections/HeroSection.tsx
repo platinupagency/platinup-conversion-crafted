@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import AnimatedSection from "@/components/AnimatedSection";
 import GradientMesh from "@/components/backgrounds/GradientMesh";
+import { openCalendly } from "@/lib/calendly";
 
 const HeroSection = () => (
   <section className="relative min-h-[100dvh] flex items-center px-6 pt-16 overflow-hidden isolate">
@@ -30,7 +31,7 @@ const HeroSection = () => (
       </AnimatedSection>
       <AnimatedSection delay={0.4}>
         <div className="mt-8 flex flex-col items-center gap-6">
-          <Button variant="cta" size="lg" className="text-base px-8 py-6 w-fit">
+          <Button variant="cta" size="lg" className="text-base px-8 py-6 w-fit" onClick={openCalendly}>
             Domluvit konzultaci zdarma
           </Button>
           <p className="text-lg text-muted-foreground font-body">

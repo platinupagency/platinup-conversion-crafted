@@ -1,5 +1,6 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
+import { openCalendly } from "@/lib/calendly";
 
 const items = [
   "přivádí zákazníky zpět",
@@ -42,7 +43,7 @@ const HowItWorksSection = () => (
       </AnimatedSection>
       <AnimatedSection delay={0.4}>
         <div className="mt-10">
-          <Button variant="cta" size="lg" className="text-base px-8 py-5">
+          <Button variant="cta" size="lg" className="text-base px-8 py-5" onClick={openCalendly}>
             Domluvit konzultaci zdarma
           </Button>
         </div>

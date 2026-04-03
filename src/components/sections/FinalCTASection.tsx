@@ -1,6 +1,7 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import GradientMesh from "@/components/backgrounds/GradientMesh";
+import { openCalendly } from "@/lib/calendly";
 
 const FinalCTASection = () => (
   <section className="relative py-20 md:py-28 px-6 overflow-hidden">
@@ -32,7 +33,7 @@ const FinalCTASection = () => (
         <p className="mt-4 text-lg text-muted-foreground font-body">
           Domluvme si krátkou konzultaci a podíváme se na váš e-shop konkrétně.
         </p>
-        <Button variant="cta" size="lg" className="mt-8 text-base px-10 py-6">
+        <Button variant="cta" size="lg" className="mt-8 text-base px-10 py-6" onClick={openCalendly}>
           Domluvit konzultaci zdarma
         </Button>
       </AnimatedSection>
