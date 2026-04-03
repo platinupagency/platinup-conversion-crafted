@@ -62,6 +62,14 @@ const Showcase = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Ukázky e-mailů – PlatinUp</title>
+        <meta name="description" content="Podívejte se na ukázky e-mailových kampaní, které jsme vytvořili pro naše klienty." />
+        <link rel="canonical" href="https://www.platinup.cz/ukazky" />
+        <meta property="og:title" content="Ukázky e-mailů – PlatinUp" />
+        <meta property="og:description" content="Podívejte se na ukázky e-mailových kampaní, které jsme vytvořili pro naše klienty." />
+        <meta property="og:url" content="https://www.platinup.cz/ukazky" />
+      </Helmet>
       <Navbar />
       <main className="pt-24 pb-24 bg-background min-h-screen">
         <div className="container max-w-6xl mx-auto px-6">
