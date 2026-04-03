@@ -31,7 +31,7 @@ const HeroSection = () => (
       <AnimatedSection delay={0.4}>
         <div className="mt-8 flex flex-col gap-6">
           <Button variant="cta" size="lg" className="text-base px-8 py-6 w-fit">
-            Domluvit hovor zdarma
+            Domluvit konzultaci zdarma
           </Button>
           <p className="text-lg text-muted-foreground font-body">
             Pokud e-mail marketing nic nevydělá,{" "}

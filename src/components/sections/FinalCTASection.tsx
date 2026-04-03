@@ -30,10 +30,10 @@ const FinalCTASection = () => (
           Chcete zjistit, kolik peněz vám teď utíká?
         </h3>
         <p className="mt-4 text-lg text-muted-foreground font-body">
-          Domluvme si krátký hovor a podíváme se na váš e-shop konkrétně.
+          Domluvme si krátkou konzultaci a podíváme se na váš e-shop konkrétně.
         </p>
         <Button variant="cta" size="lg" className="mt-8 text-base px-10 py-6">
-          Domluvit hovor zdarma
+          Domluvit konzultaci zdarma
         </Button>
       </AnimatedSection>
     </div>
