@@ -14,7 +14,7 @@ const stats = [
 const StatsSection = () => (
   <section className="relative py-20 md:py-28 px-6 overflow-hidden">
     <GradientMesh variant="stats" />
-    <div className="relative z-10 max-w-2xl mx-auto">
+    <div className="relative z-10 max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center italic">
           „E-mail marketing už dnes nemá smysl."
