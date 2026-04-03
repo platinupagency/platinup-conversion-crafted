@@ -5,7 +5,7 @@ const ProblemSection = () => (
     <div className="max-w-2xl mx-auto">
       <AnimatedSection>
         <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center">
-          Většina e-shopů už e-mail marketing „dělá"
+          Většina e-shopů už e-mail marketing „dělá“
         </h2>
       </AnimatedSection>
 
