@@ -17,7 +17,7 @@ const StatsSection = () => (
     <div className="relative z-10 max-w-4xl mx-auto">
       <AnimatedSection>
         <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center italic">
-          „E-mail marketing už dnes nemá smysl."
+          „E-mail marketing už dnes nemá smysl.“
         </h2>
       </AnimatedSection>
 
