@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const TeamSection = () => (
   <section className="py-20 md:py-28 px-6">
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto text-center">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Zároveň nejsme žádná obří agentura.

@@ -2,7 +2,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const InsightSection = () => (
   <section className="py-20 md:py-28 px-6 bg-background-alt">
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto text-center">
       <AnimatedSection>
         <p className="text-lg text-muted-foreground font-body">
           E-mail marketing totiž není o tom, že „něco posíláte".
@@ -22,7 +22,7 @@ const InsightSection = () => (
         <p className="mt-12 text-xl font-bold font-display text-foreground">
           Většina e-shopů dělá stejné chyby:
         </p>
-        <ul className="mt-6 space-y-2 text-lg text-muted-foreground font-body list-disc list-inside">
+        <ul className="mt-6 space-y-2 text-lg text-muted-foreground font-body list-disc list-inside text-left max-w-md mx-auto">
           <li>posílá stejné kampaně všem</li>
           <li>nepracuje se segmentací</li>
           <li>nemá jasnou strategii</li>
@@ -61,7 +61,7 @@ const InsightSection = () => (
           <p className="text-lg text-muted-foreground font-body">
             Právě tenhle rozdíl rozhoduje, jestli:
           </p>
-          <ul className="mt-4 space-y-2 text-lg text-muted-foreground font-body list-disc list-inside">
+          <ul className="mt-4 space-y-2 text-lg text-muted-foreground font-body list-disc list-inside text-left max-w-lg mx-auto">
             <li>e-mailing jen „doplní" vaše tržby</li>
             <li>nebo se stane jedním z vašich hlavních prodejních kanálů</li>
           </ul>

@@ -11,7 +11,7 @@ const items = [
 
 const SolutionSection = () => (
   <section className="py-20 md:py-28 px-6">
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto text-center">
       <AnimatedSection>
         <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
           Nejsme klasická agentura.
@@ -24,7 +24,7 @@ const SolutionSection = () => (
         </p>
       </AnimatedSection>
       <AnimatedSection delay={0.15}>
-        <div className="mt-10 space-y-4">
+        <div className="mt-10 space-y-4 text-left max-w-lg mx-auto">
           {items.map((item, i) => (
             <div key={i} className="flex items-start gap-3">
               <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />

@@ -58,7 +58,7 @@ const ContactSection = () => {
     <section className="py-20 md:py-28 px-6">
       <div className="max-w-4xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
-          <div>
+          <div className="text-center md:text-left">
             <AnimatedSection>
               <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
                 Domluvte si konzultaci zdarma
@@ -68,7 +68,7 @@ const ContactSection = () => {
               <p className="mt-4 text-lg text-muted-foreground font-body">
                 Vyplňte formulář a podíváme se na váš e-shop konkrétně. Bez závazků.
               </p>
-              <div className="mt-8 space-y-4 text-muted-foreground font-body">
+              <div className="mt-8 space-y-4 text-muted-foreground font-body text-left max-w-sm mx-auto md:mx-0">
                 <div className="flex items-start gap-3">
                   <span className="mt-2 w-1.5 h-1.5 rounded-full bg-gold shrink-0" />
                   <p>Zanalyzujeme váš aktuální stav</p>
@@ -90,7 +90,7 @@ const ContactSection = () => {
           </div>
 
           <AnimatedSection delay={0.15}>
-            <form onSubmit={handleSubmit} className="space-y-5 p-6 md:p-8 rounded-2xl border border-border bg-background-alt">
+            <form onSubmit={handleSubmit} className="space-y-5 p-6 md:p-8 rounded-2xl border border-border bg-background-alt text-left">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5 font-body">
                   Jméno *

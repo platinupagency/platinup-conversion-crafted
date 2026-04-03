@@ -2,7 +2,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 const ProblemSection = () => (
   <section className="py-20 md:py-28 px-6 bg-background-alt">
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto text-center">
       <AnimatedSection>
         <p className="text-xl md:text-2xl font-display font-bold text-foreground italic">
           „My už e-mail marketing děláme."
@@ -19,7 +19,7 @@ const ProblemSection = () => (
       </AnimatedSection>
 
       <AnimatedSection delay={0.2}>
-        <ul className="mt-6 space-y-2 text-lg text-muted-foreground font-body list-disc list-inside">
+        <ul className="mt-6 space-y-2 text-lg text-muted-foreground font-body list-disc list-inside text-left max-w-md mx-auto">
           <li>nastavený opuštěný košík</li>
           <li>občasná kampaň při slevě</li>
           <li>newsletter pro celou databázi</li>
