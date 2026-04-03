@@ -6,6 +6,15 @@ const corsHeaders = {
     "authorization, x-client-info, apikey, content-type",
 };
 
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
 serve(async (req) => {
   if (req.method === "OPTIONS") {
     return new Response(null, { headers: corsHeaders });
@@ -17,7 +26,11 @@ serve(async (req) => {
       throw new Error("RESEND_API_KEY is not configured");
     }
 
-    const { name, email, website, message } = await req.json();
+    const body = await req.json();
+    const name = typeof body.name === "string" ? body.name.trim().slice(0, 100) : "";
+    const email = typeof body.email === "string" ? body.email.trim().slice(0, 255) : "";
+    const website = typeof body.website === "string" ? body.website.trim().slice(0, 200) : "";
+    const message = typeof body.message === "string" ? body.message.trim().slice(0, 1000) : "";
 
     if (!name || !email) {
       return new Response(
@@ -26,7 +39,20 @@ serve(async (req) => {
       );
     }
 
-    // Send notification email to you
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return new Response(
+        JSON.stringify({ error: "Neplatný formát e-mailu." }),
+        { status: 400, headers: { ...corsHeaders, "Content-Type": "application/json" } }
+      );
+    }
+
+    // Sanitize all user inputs before inserting into HTML
+    const safeName = escapeHtml(name);
+    const safeEmail = escapeHtml(email);
+    const safeWebsite = escapeHtml(website || "neuvedeno");
+    const safeMessage = escapeHtml(message || "bez zprávy");
+
     const res = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
@@ -36,13 +62,13 @@ serve(async (req) => {
       body: JSON.stringify({
         from: "Kontaktní formulář <send@emailujeme.cz>",
         to: ["tereza@emailujeme.cz"],
-        subject: `Nová zpráva od ${name}`,
+        subject: `Nová zpráva od ${safeName}`,
         html: `
           <h2>Nová zpráva z kontaktního formuláře</h2>
-          <p><strong>Jméno:</strong> ${name}</p>
-          <p><strong>E-mail:</strong> ${email}</p>
-          <p><strong>Web:</strong> ${website || "neuvedeno"}</p>
-          <p><strong>Zpráva:</strong> ${message || "bez zprávy"}</p>
+          <p><strong>Jméno:</strong> ${safeName}</p>
+          <p><strong>E-mail:</strong> ${safeEmail}</p>
+          <p><strong>Web:</strong> ${safeWebsite}</p>
+          <p><strong>Zpráva:</strong> ${safeMessage}</p>
         `,
       }),
     });
@@ -51,7 +77,7 @@ serve(async (req) => {
 
     if (!res.ok) {
       console.error("Resend error:", data);
-      throw new Error(`Resend API error [${res.status}]: ${JSON.stringify(data)}`);
+      throw new Error("Email sending failed");
     }
 
     return new Response(JSON.stringify({ success: true }), {
@@ -60,9 +86,8 @@ serve(async (req) => {
     });
   } catch (error: unknown) {
     console.error("Error sending email:", error);
-    const errorMessage = error instanceof Error ? error.message : "Unknown error";
     return new Response(
-      JSON.stringify({ error: errorMessage }),
+      JSON.stringify({ error: "Při odesílání došlo k chybě. Zkuste to prosím znovu." }),
       { status: 500, headers: { ...corsHeaders, "Content-Type": "application/json" } }
     );
   }
