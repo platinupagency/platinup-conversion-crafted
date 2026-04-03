@@ -21,7 +21,7 @@ const PricingSection = () => (
 
       <AnimatedSection delay={0.2}>
         <div className="mt-10 p-8 md:p-12 rounded-2xl border border-cta/20 bg-cta/5 text-center">
-          <p className="text-2xl md:text-3xl lg:text-4xl font-extrabold font-display text-foreground leading-tight">
+          <p className="text-xl md:text-3xl lg:text-4xl font-extrabold font-display text-foreground leading-tight">
             Pokud e-mail marketing nevydělává,{" "}
             <span className="text-cta">neplatíte nám ani korunu.</span>
           </p>
