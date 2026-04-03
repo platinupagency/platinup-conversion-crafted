@@ -22,7 +22,7 @@ const StatsSection = () => (
       </AnimatedSection>
 
       <AnimatedSection delay={0.1}>
-        <p className="mt-6 text-lg text-muted-foreground font-body">
+        <p className="mt-6 text-lg text-muted-foreground font-body text-center">
           To si myslí spousta lidí. Realita je ale jiná. A tady jsou data, která byste měli znát:
         </p>
       </AnimatedSection>
