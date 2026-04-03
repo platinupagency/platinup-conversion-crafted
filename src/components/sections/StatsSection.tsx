@@ -38,11 +38,11 @@ const StatsSection = () => (
           <AnimatedSection key={i} delay={0.15 + i * 0.1}>
             <div className="rounded-xl border border-border bg-card/50 backdrop-blur-sm p-6 h-full text-left">
               <p className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
-                {s.value.split(/(\d+)/).map((part, j) =>
-                  /\d/.test(part) ? (
-                    <span key={j} className="text-gold">{part}</span>
-                  ) : (
+                {s.value.split(/([×%:])/).map((part, j) =>
+                  /[×%:]/.test(part) ? (
                     <span key={j} className="text-foreground">{part}</span>
+                  ) : (
+                    <span key={j} className="text-gold">{part}</span>
                   )
                 )}
               </p>
