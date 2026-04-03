@@ -24,11 +24,11 @@ const SolutionSection = () => (
       </AnimatedSection>
 
       <AnimatedSection delay={0.1}>
-        <div className="mt-10 space-y-4">
+        <div className="mt-10 space-y-2">
           {items.map((item, i) => (
             <div
               key={i}
-              className="flex items-center gap-4 p-4 rounded-xl border border-gold/10 bg-gold/[0.03]"
+              className="flex items-center gap-3 px-3 py-2.5 rounded-lg border border-gold/10 bg-gold/[0.03]"
             >
               <div className="mt-0.5 flex-shrink-0 w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center">
                 <item.icon className="w-4.5 h-4.5 text-gold" />
