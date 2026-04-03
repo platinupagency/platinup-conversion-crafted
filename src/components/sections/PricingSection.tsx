@@ -1,6 +1,7 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import { Button } from "@/components/ui/button";
 import GradientMesh from "@/components/backgrounds/GradientMesh";
+import { openCalendly } from "@/lib/calendly";
 
 const PricingSection = () => (
   <section className="relative py-20 md:py-28 px-6 bg-background-alt overflow-hidden">
@@ -30,7 +31,7 @@ const PricingSection = () => (
       </AnimatedSection>
       <AnimatedSection delay={0.3}>
         <div className="mt-10">
-          <Button variant="cta" size="lg" className="text-base px-8 py-5">
+          <Button variant="cta" size="lg" className="text-base px-8 py-5" onClick={openCalendly}>
             Začít vydělávat z e-mailů
           </Button>
         </div>
