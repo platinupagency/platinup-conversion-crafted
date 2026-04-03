@@ -33,7 +33,7 @@ const HeroSection = () => (
           <Button variant="cta" size="lg" className="text-base px-8 py-6 w-fit" onClick={openCalendly}>
             Domluvit konzultaci zdarma
           </Button>
-          <p className="text-lg text-muted-foreground font-body italic border-l-2 border-gold/40 pl-4">
+          <p className="text-lg text-muted-foreground font-body italic">
             Pokud e-mail marketing nic nevydělá,{" "}
             <span className="font-semibold text-gold not-italic">neplatíte nám ani korunu.</span>
           </p>
