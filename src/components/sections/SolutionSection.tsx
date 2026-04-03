@@ -13,7 +13,7 @@ const SolutionSection = () => (
           Nejsme full-service agentura.
         </p>
         <p className="mt-4 text-lg text-muted-foreground font-body text-center">
-          Specializujeme se výhradně na e-mail marketing — a právě díky tomu jdeme do hloubky, kde většina agentur končí.
+          Specializujeme se výhradně na e-mail marketing – a právě díky tomu jdeme do hloubky, kde většina agentur končí.
         </p>
       </AnimatedSection>
 
