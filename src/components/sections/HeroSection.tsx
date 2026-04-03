@@ -13,7 +13,7 @@ const HeroSection = () => (
         </p>
       </AnimatedSection>
       <AnimatedSection delay={0.1}>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold font-display text-foreground leading-snug md:leading-snug lg:leading-snug">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold font-display text-foreground" style={{ lineHeight: 1.18 }}>
           Proměníme váš e-mail marketing v jeden z{" "}
           <span className="text-gold">nejvýdělečnějších</span> kanálů.
         </h1>
