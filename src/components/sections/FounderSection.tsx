@@ -3,12 +3,12 @@ import founderImg from "@/assets/founder.png";
 
 const FounderSection = () => (
   <section className="py-20 md:py-28 px-6">
-    <div className="max-w-4xl mx-auto text-center">
+    <div className="max-w-2xl mx-auto">
       <AnimatedSection>
-        <p className="text-sm font-bold uppercase tracking-widest text-gold mb-4 font-display">
+        <p className="text-sm font-bold uppercase tracking-widest text-gold mb-4 font-display text-center">
           Kdo stojí za PlatinUp
         </p>
-        <h2 className="text-3xl md:text-4xl font-extrabold font-display text-foreground">
+        <h2 className="text-2xl md:text-3xl font-extrabold font-display text-foreground text-center">
           Osobní přístup, ne korporátní mašina
         </h2>
       </AnimatedSection>
@@ -31,7 +31,7 @@ const FounderSection = () => (
           <p className="text-sm text-gold font-semibold uppercase tracking-wide font-display mb-4">
             FOUNDER
           </p>
-          <div className="space-y-4 text-lg text-muted-foreground font-body max-w-2xl mx-auto text-left">
+          <div className="space-y-4 text-lg text-muted-foreground font-body text-left">
             <p>
               PlatinUp jsem založila s vizí pomáhat e-shopům dosahovat jejich maximálního potenciálu. A také ukázat, že e-mail marketing je stejně důležitý jako placená reklama.
             </p>

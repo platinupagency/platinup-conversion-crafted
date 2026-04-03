@@ -14,26 +14,20 @@ const stats = [
 const StatsSection = () => (
   <section className="relative py-20 md:py-28 px-6 overflow-hidden">
     <GradientMesh variant="stats" />
-    <div className="relative z-10 max-w-4xl mx-auto text-center">
+    <div className="relative z-10 max-w-2xl mx-auto">
       <AnimatedSection>
-        <p className="text-xl md:text-2xl font-display font-bold text-foreground italic">
+        <h2 className="text-2xl md:text-3xl font-display font-bold text-foreground text-center italic">
           „E-mail marketing už dnes nemá smysl."
-        </p>
+        </h2>
       </AnimatedSection>
 
       <AnimatedSection delay={0.1}>
-        <div className="mt-10">
-          <p className="text-lg text-muted-foreground font-body">To si myslí spousta lidí.</p>
-          <p className="text-xl font-bold text-foreground font-display mt-1">
-            Realita je ale jiná.
-          </p>
-          <p className="mt-6 text-lg text-muted-foreground font-body">
-            A tady jsou data, která byste měli znát:
-          </p>
-        </div>
+        <p className="mt-6 text-lg text-muted-foreground font-body">
+          To si myslí spousta lidí. Realita je ale jiná. A tady jsou data, která byste měli znát:
+        </p>
       </AnimatedSection>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2">
+      <div className="mt-10 grid gap-6 sm:grid-cols-2">
         {stats.map((s, i) => (
           <AnimatedSection key={i} delay={0.15 + i * 0.1}>
             <div className="rounded-xl border border-border bg-card/50 backdrop-blur-sm p-6 h-full text-left">
@@ -56,18 +50,13 @@ const StatsSection = () => (
       </div>
 
       <AnimatedSection delay={0.8}>
-        <div className="mt-14">
-          <p className="text-lg text-muted-foreground font-body">
-            Jinými slovy — <span className="font-semibold text-foreground">peníze už máte ve své databázi.</span>
-          </p>
-          <p className="text-lg text-muted-foreground font-body mt-1">
-            Jen z ní netěžíte maximum.
-          </p>
-        </div>
+        <p className="mt-10 text-lg text-muted-foreground font-body">
+          Jinými slovy — <span className="font-semibold text-foreground">peníze už máte ve své databázi.</span> Jen z ní netěžíte maximum.
+        </p>
       </AnimatedSection>
 
       <AnimatedSection delay={0.9}>
-        <div className="mt-14 flex items-center gap-6">
+        <div className="mt-10 flex items-center gap-6">
           <div className="gold-divider flex-1" />
           <Button variant="cta" size="lg" className="text-base px-8 py-5 shrink-0" onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}>
             Chci vytěžit maximum
