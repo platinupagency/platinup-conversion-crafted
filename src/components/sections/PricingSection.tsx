@@ -6,7 +6,7 @@ import { openCalendly } from "@/lib/calendly";
 const PricingSection = () => (
   <section className="relative py-20 md:py-28 px-6 bg-background-alt overflow-hidden">
     <GradientMesh variant="pricing" />
-    <div className="relative z-10 max-w-2xl mx-auto">
+    <div className="relative z-10 max-w-3xl mx-auto">
       <AnimatedSection>
         <h2 className="text-2xl md:text-3xl font-extrabold font-display text-foreground text-center">
           A teď to nejdůležitější.
