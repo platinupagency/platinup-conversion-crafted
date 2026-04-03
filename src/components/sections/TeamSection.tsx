@@ -28,7 +28,7 @@ const TeamSection = () => (
       </AnimatedSection>
       <AnimatedSection delay={0.3}>
         <div className="mt-10">
-          <Button variant="cta" size="lg" className="text-base px-8 py-5">
+          <Button variant="cta" size="lg" className="text-base px-8 py-5" onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}>
             Zjistit, jestli se hodíme
           </Button>
         </div>

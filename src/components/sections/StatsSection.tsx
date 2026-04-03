@@ -69,7 +69,7 @@ const StatsSection = () => (
       <AnimatedSection delay={0.9}>
         <div className="mt-14 flex items-center gap-6">
           <div className="gold-divider flex-1" />
-          <Button variant="cta" size="lg" className="text-base px-8 py-5 shrink-0">
+          <Button variant="cta" size="lg" className="text-base px-8 py-5 shrink-0" onClick={() => document.getElementById('booking')?.scrollIntoView({ behavior: 'smooth' })}>
             Chci vytěžit maximum
           </Button>
           <div className="gold-divider flex-1" />
