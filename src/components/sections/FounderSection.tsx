@@ -8,9 +8,6 @@ const FounderSection = () => (
         <p className="text-sm font-bold uppercase tracking-widest text-gold mb-4 font-display text-center">
           Kdo stojí za PlatinUp
         </p>
-        <h2 className="text-2xl md:text-3xl font-extrabold font-display text-foreground text-center">
-          Osobní přístup, ne korporátní mašina
-        </h2>
       </AnimatedSection>
 
       <div className="mt-12 flex flex-col items-center gap-10">
