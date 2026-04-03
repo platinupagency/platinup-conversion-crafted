@@ -14,13 +14,14 @@ const clients = [
 
 const ClientsSection = () => (
   <section className="relative z-10 py-20 bg-background">
-    <div className="container max-w-5xl mx-auto px-6 text-center">
-      <p className="relative z-20 text-sm font-bold uppercase tracking-widest text-gold mb-10 font-display opacity-100">
+    <div className="text-center mb-10">
+      <p className="relative z-20 text-sm font-bold uppercase tracking-widest text-gold font-display opacity-100">
         Spolupracovali jsme s
       </p>
-      <div className="overflow-hidden">
-        <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
-          {[...clients, ...clients, ...clients].map((client, i) => (
+    </div>
+    <div className="overflow-hidden w-full">
+      <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
+        {[...clients, ...clients, ...clients, ...clients, ...clients, ...clients].map((client, i) => (
             <div
               key={`${client.name}-${i}`}
               className="flex items-center justify-center mx-8 md:mx-12 shrink-0"
@@ -41,8 +42,7 @@ const ClientsSection = () => (
           ))}
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 );
 
 export default ClientsSection;
