@@ -19,7 +19,7 @@ const ClientsSection = () => (
         Spolupracovali jsme s
       </p>
     </div>
-    <div className="overflow-hidden w-[80%] mx-auto">
+    <div className="overflow-hidden w-[80%] mx-auto" style={{ maskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)' }}>
       <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
         {[...clients, ...clients, ...clients, ...clients, ...clients, ...clients].map((client, i) => (
             <div
