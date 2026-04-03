@@ -19,7 +19,7 @@ const ClientsSection = () => (
         Spolupracovali jsme s
       </p>
     </div>
-    <div className="overflow-hidden w-full">
+    <div className="overflow-hidden w-[80%] mx-auto">
       <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
         {[...clients, ...clients, ...clients, ...clients, ...clients, ...clients].map((client, i) => (
             <div
