@@ -28,7 +28,7 @@ const SolutionSection = () => (
           {items.map((item, i) => (
             <div
               key={i}
-              className="flex items-start gap-4 p-4 rounded-xl border border-gold/10 bg-gold/[0.03]"
+              className="flex items-center gap-4 p-4 rounded-xl border border-gold/10 bg-gold/[0.03]"
             >
               <div className="mt-0.5 flex-shrink-0 w-9 h-9 rounded-lg bg-gold/10 flex items-center justify-center">
                 <item.icon className="w-4.5 h-4.5 text-gold" />
