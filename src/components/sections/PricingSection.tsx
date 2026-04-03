@@ -15,10 +15,7 @@ const PricingSection = () => (
 
       <AnimatedSection delay={0.1}>
         <p className="mt-8 text-lg text-muted-foreground font-body">
-          Neúčtujeme hodinovku. Neúčtujeme „správu".
-        </p>
-        <p className="mt-4 text-xl font-bold text-foreground font-display">
-          Jsme placeni za výsledky.
+          Fungujeme na férovém modelu, kde neúčtujeme hodinovou sazbu ani neprodáváme pouhou „správu“. Naše odměna je navázaná přímo na výsledky, které e-mail marketing přináší. Pokud nevydělává, neplatíte.
         </p>
       </AnimatedSection>
 
